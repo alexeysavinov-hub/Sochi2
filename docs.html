@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Onest:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <style>
+    html { scroll-behavior: smooth; scroll-padding-top: 88px; }
+    body { margin: 0; background: #E8E3DA; color: #22231F; font-family: 'Onest', system-ui, sans-serif; -webkit-font-smoothing: antialiased; }
+    * { box-sizing: border-box; }
+    a { color: #33503F; text-decoration: underline; text-underline-offset: 3px; }
+    a:hover { color: #22231F; }
+    ::selection { background: #33503F; color: #E8E3DA; }
+    @media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } }
+  </style>
+</helmet>
+<div data-screen-label="BIOSOMA Документы" style="min-height:100vh; background:#E8E3DA; color:#22231F; font-family:'Onest', system-ui, sans-serif;">
+  <header style="position:sticky; top:0; z-index:20; background:rgba(232,227,218,0.92); backdrop-filter:blur(12px); -webkit-backdrop-filter:blur(12px); border-bottom:1px solid rgba(34,35,31,0.1);">
+    <div style="max-width:1280px; margin:0 auto; height:64px; padding:0 clamp(20px,4vw,56px); display:flex; align-items:center; justify-content:space-between; gap:16px;">
+      <a href="index.html" style="display:flex; align-items:center; gap:12px; color:#22231F; text-decoration:none;">
+        <svg viewBox="0 0 600 440" aria-hidden="true" fill="currentColor" style="display:block; height:20px; width:auto; flex:none;"><path d="M245 80.5 L279 43.1 L279 430 L245 430 Z"></path><path d="M169 164.1 L203 126.7 L203 430 L169 430 Z"></path><path d="M93 247.7 L127 210.3 L127 430 L93 430 Z"></path><path d="M17 331.3 L51 293.9 L51 430 L17 430 Z"></path><path d="M321 43.1 L355 80.5 L355 430 L321 430 Z"></path><path d="M397 126.7 L431 164.1 L431 430 L397 430 Z"></path><path d="M473 210.3 L507 247.7 L507 430 L473 430 Z"></path><path d="M549 293.9 L583 331.3 L583 430 L549 430 Z"></path></svg>
+        <span style="font-size:16px; font-weight:600; letter-spacing:0.22em;">BIOSOMA</span>
+      </a>
+      <a href="index.html" style="display:inline-flex; align-items:center; height:44px; padding:0 18px; border:1px solid rgba(34,35,31,0.3); color:#22231F; font-size:14px; text-decoration:none; white-space:nowrap; transition: background .3s ease, color .3s ease;" style-hover="background:#22231F; color:#E8E3DA">← На сайт</a>
+    </div>
+  </header>
+
+  <div style="max-width:1280px; margin:0 auto; padding: clamp(40px,6vw,88px) clamp(20px,4vw,56px) clamp(64px,8vw,120px); display:flex; flex-wrap:wrap; gap:clamp(32px,5vw,80px); align-items:flex-start;">
+    <aside style="flex: 1 1 240px; max-width:320px; position: {{ asidePos }}; top:104px; display:grid; gap:24px;">
+      <div>
+        <div style="font-size:12px; letter-spacing:0.2em; text-transform:uppercase; color:#A07C55; margin-bottom:12px;">BIOSOMA Mountain Retreat</div>
+        <h1 style="margin:0; font-size:clamp(34px,3.6vw,48px); line-height:1.05; font-weight:300; letter-spacing:-0.02em;">Документы</h1>
+      </div>
+      <nav style="display:grid; border-top:1px solid rgba(34,35,31,0.14);">
+        <sc-for list="{{ toc }}" as="d" hint-placeholder-count="4">
+          <a href="{{ d.href }}" style="display:grid; grid-template-columns:28px 1fr; gap:10px; padding:14px 0; border-bottom:1px solid rgba(34,35,31,0.14); font-size:15px; line-height:1.4; text-decoration:none; color: {{ d.fg }}; font-weight: {{ d.fw }}; transition: color .3s ease;"><span style="font-size:12px; letter-spacing:0.1em; color:#A07C55; padding-top:2px;">{{ d.n }}</span><span>{{ d.title }}</span></a>
+        </sc-for>
+      </nav>
+      <div style="font-size:13px; line-height:1.55; color:#5E5A52; padding:16px; border:1px solid rgba(160,124,85,0.45);">Шаблоны для согласования с юристом. Данные в квадратных скобках заполняются перед публикацией.</div>
+    </aside>
+
+    <main style="flex: 3 1 560px; min-width:0; max-width:780px; display:grid; gap:clamp(56px,7vw,96px);">
+
+      <article id="offer" style="font-size:16px; line-height:1.65; color:#3F3C36;">
+        <div style="font-size:12px; letter-spacing:0.2em; text-transform:uppercase; color:#A07C55;">Документ 01</div>
+        <h2 style="margin:12px 0 6px; font-size:clamp(28px,3vw,40px); line-height:1.1; font-weight:300; letter-spacing:-0.02em; color:#22231F;">Публичная оферта</h2>
+        <p style="margin:0 0 8px; font-size:14px; color:#6B665E;">Договор на оказание услуг по программам ретрита BIOSOMA Mountain Retreat · редакция от [дд.мм.гггг]</p>
+        <h3 style="margin:32px 0 8px; font-size:18px; font-weight:500; color:#22231F;">1. Общие положения</h3>
+        <p>1.1. Настоящий документ — публичная оферта [полное наименование юридического лица или ИП], ИНН [__________], ОГРН [__________], адрес: [__________] (далее — Исполнитель). Оферта содержит условия оказания услуг по программам ретрита BIOSOMA Mountain Retreat (далее — Договор).</p>
+        <p>1.2. Оферта адресована любому дееспособному физическому лицу или организации (далее — Гость). Оферта считается принятой (акцептованной) с момента полной или частичной оплаты бронирования после его подтверждения Исполнителем.</p>
+        <p>1.3. Актуальная редакция оферты размещена на сайте [домен] (далее — Сайт). Изменения оферты не распространяются на бронирования, оплаченные до публикации новой редакции.</p>
+        <h3 style="margin:32px 0 8px; font-size:18px; font-weight:500; color:#22231F;">2. Предмет договора</h3>
+        <p>2.1. Исполнитель оказывает Гостю услуги выбранной программы: проживание, питание, SPA- и термальные процедуры, занятия движением и дыханием, сопровождение специалистов и иные услуги, указанные в описании программы на Сайте и в подтверждении бронирования.</p>
+        <p>2.2. Программы: RESET (3 дня / 2 ночи), DETOX (5 дней / 4 ночи), LONGEVITY (7 дней / 6 ночей), DEEP RESET (10–14 дней), DAY RETREAT (один день без проживания). Точный состав программы фиксируется в подтверждении бронирования.</p>
+        <p>2.3. Услуги носят оздоровительный характер и не являются медицинскими. Диагностика BIOSOMA LAB (состав тела, вариабельность сердечного ритма, мониторинг сна) носит информационный характер и не заменяет консультацию врача.</p>
+        <p>2.4. Услуги размещения оказываются в соответствии с Правилами предоставления гостиничных услуг в Российской Федерации.</p>
+        <h3 style="margin:32px 0 8px; font-size:18px; font-weight:500; color:#22231F;">3. Бронирование</h3>
+        <p>3.1. Гость направляет запрос через форму на Сайте, по телефону или в мессенджере и указывает программу, дату заезда и количество гостей.</p>
+        <p>3.2. Исполнитель подтверждает наличие мест и направляет подтверждение с составом программы, стоимостью и ссылкой на оплату.</p>
+        <p>3.3. Бронирование становится гарантированным после поступления предоплаты в размере [__] % стоимости программы в срок, указанный в подтверждении.</p>
+        <h3 style="margin:32px 0 8px; font-size:18px; font-weight:500; color:#22231F;">4. Стоимость и оплата</h3>
+        <p>4.1. Стоимость программ указывается на Сайте и в подтверждении бронирования в рублях [с учётом НДС / НДС не облагается].</p>
+        <p>4.2. Оплата производится банковской картой, через СБП или по счёту через платёжный сервис [наименование]. Остаток стоимости оплачивается не позднее [дня заезда].</p>
+        <p>4.3. Кассовый чек направляется на электронную почту или номер телефона Гостя.</p>
+        <h3 style="margin:32px 0 8px; font-size:18px; font-weight:500; color:#22231F;">5. Заезд, проживание и выезд</h3>
+        <p>5.1. Заезд — с [14:00], выезд — до [12:00] по местному времени.</p>
+        <p>5.2. При заселении Гость предъявляет документ, удостоверяющий личность.</p>
+        <p>5.3. Гость соблюдает правила проживания, правила посещения SPA и бассейнов и технику безопасности на занятиях.</p>
+        <h3 style="margin:32px 0 8px; font-size:18px; font-weight:500; color:#22231F;">6. Здоровье и противопоказания</h3>
+        <p>6.1. Тепловые и холодовые процедуры, физические нагрузки и дыхательные практики имеют противопоказания. Гость самостоятельно оценивает своё состояние и при необходимости заранее консультируется с врачом.</p>
+        <p>6.2. До начала программы Гость сообщает Исполнителю о беременности, хронических заболеваниях, аллергиях и ограничениях в питании.</p>
+        <p>6.3. Специалист вправе изменить или отменить процедуру, если она может навредить здоровью Гостя. Невыполненная процедура заменяется равноценной услугой или возвращается её стоимость.</p>
+        <h3 style="margin:32px 0 8px; font-size:18px; font-weight:500; color:#22231F;">7. Изменение и отмена</h3>
+        <p>7.1. Перенос, отмена, незаезд и досрочный выезд регулируются <a href="#cancel">Правилами отмены и возврата</a>, которые являются частью Договора.</p>
+        <h3 style="margin:32px 0 8px; font-size:18px; font-weight:500; color:#22231F;">8. Ответственность</h3>
+        <p>8.1. Стороны несут ответственность в соответствии с законодательством Российской Федерации.</p>
+        <p>8.2. Гость возмещает ущерб, причинённый имуществу Исполнителя по его вине.</p>
+        <p>8.3. Стороны освобождаются от ответственности при обстоятельствах непреодолимой силы.</p>
+        <h3 style="margin:32px 0 8px; font-size:18px; font-weight:500; color:#22231F;">9. Персональные данные</h3>
+        <p>9.1. Персональные данные обрабатываются в соответствии с <a href="#policy">Политикой обработки персональных данных</a> на основании <a href="#consent">согласия</a>, которое оформляется отдельно.</p>
+        <h3 style="margin:32px 0 8px; font-size:18px; font-weight:500; color:#22231F;">10. Разрешение споров</h3>
+        <p>10.1. Претензии направляются на [e-mail]. Исполнитель отвечает в течение [10] дней.</p>
+        <p>10.2. Споры, не урегулированные в претензионном порядке, рассматриваются в суде в соответствии с законодательством Российской Федерации, включая законодательство о защите прав потребителей.</p>
+        <h3 style="margin:32px 0 8px; font-size:18px; font-weight:500; color:#22231F;">11. Реквизиты Исполнителя</h3>
+        <p>[Наименование] · ИНН [__________] · ОГРН [__________]<br>Адрес: [__________]<br>Телефон: [__________] · E-mail: [__________]<br>Банковские реквизиты: [__________]</p>
+      </article>
+
+      <article id="cancel" style="font-size:16px; line-height:1.65; color:#3F3C36;">
+        <div style="font-size:12px; letter-spacing:0.2em; text-transform:uppercase; color:#A07C55;">Документ 02</div>
+        <h2 style="margin:12px 0 6px; font-size:clamp(28px,3vw,40px); line-height:1.1; font-weight:300; letter-spacing:-0.02em; color:#22231F;">Правила отмены и возврата</h2>
+        <p style="margin:0 0 8px; font-size:14px; color:#6B665E;">Редакция от [дд.мм.гггг]</p>
+        <h3 style="margin:32px 0 8px; font-size:18px; font-weight:500; color:#22231F;">1. Как отменить или перенести бронирование</h3>
+        <p>Напишите на [e-mail] или в [мессенджер] и укажите номер бронирования. Датой отмены считается дата получения сообщения Исполнителем.</p>
+        <h3 style="margin:32px 0 8px; font-size:18px; font-weight:500; color:#22231F;">2. Бесплатная отмена</h3>
+        <p>При отмене не позднее чем за [14] дней до даты заезда предоплата возвращается полностью.</p>
+        <h3 style="margin:32px 0 8px; font-size:18px; font-weight:500; color:#22231F;">3. Поздняя отмена и незаезд</h3>
+        <p>При более поздней отмене или незаезде Исполнитель удерживает плату за фактический простой номера — не более стоимости одних суток проживания — и документально подтверждённые расходы на подготовку программы (например, индивидуальные закупки или бронирование специалистов). Остальная сумма возвращается.</p>
+        <h3 style="margin:32px 0 8px; font-size:18px; font-weight:500; color:#22231F;">4. Перенос дат</h3>
+        <p>Один перенос не позднее чем за [7] дней до заезда — без доплаты при наличии мест. Разница в стоимости сезонов доплачивается или возвращается.</p>
+        <h3 style="margin:32px 0 8px; font-size:18px; font-weight:500; color:#22231F;">5. Досрочный выезд</h3>
+        <p>Возвращается стоимость неиспользованных суток проживания и неоказанных услуг программы за вычетом фактически понесённых расходов.</p>
+        <h3 style="margin:32px 0 8px; font-size:18px; font-weight:500; color:#22231F;">6. DAY RETREAT</h3>
+        <p>Бесплатная отмена — не позднее чем за [48] часов. При более поздней отмене удерживаются фактически понесённые расходы.</p>
+        <h3 style="margin:32px 0 8px; font-size:18px; font-weight:500; color:#22231F;">7. Отмена со стороны Исполнителя</h3>
+        <p>Если Исполнитель не может оказать услуги, Гость выбирает перенос на другие даты или полный возврат оплаты.</p>
+        <h3 style="margin:32px 0 8px; font-size:18px; font-weight:500; color:#22231F;">8. Сроки и способ возврата</h3>
+        <p>Деньги возвращаются тем же способом, которым была произведена оплата, в течение 10 дней с даты обращения. Срок зачисления зависит от банка Гостя.</p>
+        <h3 style="margin:32px 0 8px; font-size:18px; font-weight:500; color:#22231F;">9. Сертификаты и корпоративные ретриты</h3>
+        <p>Условия отмены подарочных сертификатов и корпоративных ретритов определяются отдельным договором.</p>
+      </article>
+
+      <article id="policy" style="font-size:16px; line-height:1.65; color:#3F3C36;">
+        <div style="font-size:12px; letter-spacing:0.2em; text-transform:uppercase; color:#A07C55;">Документ 03</div>
+        <h2 style="margin:12px 0 6px; font-size:clamp(28px,3vw,40px); line-height:1.1; font-weight:300; letter-spacing:-0.02em; color:#22231F;">Политика обработки персональных данных</h2>
+        <p style="margin:0 0 8px; font-size:14px; color:#6B665E;">Редакция от [дд.мм.гггг]</p>
+        <h3 style="margin:32px 0 8px; font-size:18px; font-weight:500; color:#22231F;">1. Общие положения</h3>
+        <p>1.1. Политика определяет порядок обработки и защиты персональных данных [наименование], ИНН [__________], адрес: [__________] (далее — Оператор), и разработана в соответствии с Федеральным законом № 152-ФЗ «О персональных данных».</p>
+        <p>1.2. Политика применяется к данным, которые Оператор получает через сайт [домен], по телефону, в мессенджерах и при оказании услуг.</p>
+        <h3 style="margin:32px 0 8px; font-size:18px; font-weight:500; color:#22231F;">2. Какие данные мы обрабатываем</h3>
+        <ul style="margin:0 0 16px; padding-left:20px;">
+          <li>имя, номер телефона, адрес электронной почты;</li>
+          <li>выбранная программа, дата заезда, количество гостей, пожелания к бронированию;</li>
+          <li>данные документа, удостоверяющего личность, — при заселении;</li>
+          <li>ограничения в питании;</li>
+          <li>сведения о состоянии здоровья, необходимые для безопасного проведения процедур, — только с отдельного письменного согласия Гостя;</li>
+          <li>технические данные: cookie, IP-адрес, сведения о браузере и действиях на Сайте.</li>
+        </ul>
+        <h3 style="margin:32px 0 8px; font-size:18px; font-weight:500; color:#22231F;">3. Цели обработки</h3>
+        <ul style="margin:0 0 16px; padding-left:20px;">
+          <li>обработка запроса, бронирование и связь с Гостем;</li>
+          <li>заключение и исполнение договора, приём оплаты;</li>
+          <li>регистрация гостей в соответствии с законодательством;</li>
+          <li>безопасное проведение процедур и программ;</li>
+          <li>аналитика работы Сайта — при согласии на аналитические cookie;</li>
+          <li>информационные и рекламные рассылки — только при отдельном согласии.</li>
+        </ul>
+        <h3 style="margin:32px 0 8px; font-size:18px; font-weight:500; color:#22231F;">4. Правовые основания</h3>
+        <p>Согласие субъекта персональных данных; исполнение договора, стороной которого является Гость; обязанности, возложенные на Оператора законодательством.</p>
+        <h3 style="margin:32px 0 8px; font-size:18px; font-weight:500; color:#22231F;">5. Порядок обработки</h3>
+        <p>5.1. Оператор собирает, записывает, систематизирует, накапливает, хранит, уточняет, извлекает, использует, передаёт (предоставляет, открывает доступ), блокирует, удаляет и уничтожает персональные данные — с использованием средств автоматизации и без них.</p>
+        <p>5.2. Запись, систематизация, накопление, хранение, уточнение и извлечение персональных данных граждан Российской Федерации ведутся в базах данных, находящихся на территории Российской Федерации.</p>
+        <p>5.3. Данные передаются только лицам, действующим по поручению Оператора (платёжному сервису, системе бронирования, хостинг-провайдеру), а также в случаях, предусмотренных законом. Трансграничная передача не осуществляется.</p>
+        <p>5.4. Данные хранятся до достижения целей обработки или до отзыва согласия, если более длительный срок не установлен законом, после чего уничтожаются.</p>
+        <h3 style="margin:32px 0 8px; font-size:18px; font-weight:500; color:#22231F;">6. Cookie</h3>
+        <p>Сайт использует технические cookie, необходимые для его работы, и аналитические cookie — только при согласии посетителя. Cookie можно отключить в настройках браузера.</p>
+        <h3 style="margin:32px 0 8px; font-size:18px; font-weight:500; color:#22231F;">7. Права субъекта</h3>
+        <p>Гость вправе получить сведения об обработке своих данных, потребовать их уточнения, блокирования или уничтожения, отозвать согласие, а также обжаловать действия Оператора в Роскомнадзоре или в суде.</p>
+        <h3 style="margin:32px 0 8px; font-size:18px; font-weight:500; color:#22231F;">8. Защита данных</h3>
+        <p>Оператор принимает правовые, организационные и технические меры защиты: ограничивает доступ к данным, использует защищённые каналы передачи и назначает ответственного за организацию обработки.</p>
+        <h3 style="margin:32px 0 8px; font-size:18px; font-weight:500; color:#22231F;">9. Обращения</h3>
+        <p>Запросы направляются на [e-mail] или по адресу [__________]. Срок ответа — [10] рабочих дней.</p>
+        <h3 style="margin:32px 0 8px; font-size:18px; font-weight:500; color:#22231F;">10. Изменения</h3>
+        <p>Новая редакция Политики действует с момента её публикации на Сайте.</p>
+      </article>
+
+      <article id="consent" style="font-size:16px; line-height:1.65; color:#3F3C36;">
+        <div style="font-size:12px; letter-spacing:0.2em; text-transform:uppercase; color:#A07C55;">Документ 04</div>
+        <h2 style="margin:12px 0 6px; font-size:clamp(28px,3vw,40px); line-height:1.1; font-weight:300; letter-spacing:-0.02em; color:#22231F;">Согласие на обработку персональных данных</h2>
+        <p style="margin:0 0 8px; font-size:14px; color:#6B665E;">Отдельный документ · редакция от [дд.мм.гггг]</p>
+        <p style="margin-top:24px;">Отмечая согласие в форме на сайте [домен], я свободно, своей волей и в своём интересе даю согласие [наименование], ИНН [__________], адрес: [__________] (далее — Оператор), на обработку моих персональных данных на следующих условиях.</p>
+        <h3 style="margin:32px 0 8px; font-size:18px; font-weight:500; color:#22231F;">1. Данные</h3>
+        <p>Имя, номер телефона, адрес электронной почты (если указан), выбранная программа, дата заезда, количество гостей.</p>
+        <h3 style="margin:32px 0 8px; font-size:18px; font-weight:500; color:#22231F;">2. Цели</h3>
+        <p>Обработка запроса, подтверждение и сопровождение бронирования, связь со мной по вопросам бронирования.</p>
+        <h3 style="margin:32px 0 8px; font-size:18px; font-weight:500; color:#22231F;">3. Действия с данными</h3>
+        <p>Сбор, запись, систематизация, накопление, хранение, уточнение, извлечение, использование, передача (предоставление, доступ) лицам, действующим по поручению Оператора, блокирование, удаление, уничтожение — с использованием средств автоматизации и без них.</p>
+        <h3 style="margin:32px 0 8px; font-size:18px; font-weight:500; color:#22231F;">4. Срок</h3>
+        <p>Согласие действует до достижения целей обработки, но не более [3] лет, или до его отзыва.</p>
+        <h3 style="margin:32px 0 8px; font-size:18px; font-weight:500; color:#22231F;">5. Отзыв согласия</h3>
+        <p>Согласие можно отозвать, направив заявление на [e-mail] или по адресу Оператора. После отзыва Оператор прекращает обработку и уничтожает данные в срок, установленный законом, если нет иных законных оснований для их обработки.</p>
+        <p>Я подтверждаю, что ознакомлен(а) с <a href="#policy">Политикой обработки персональных данных</a>.</p>
+      </article>
+    </main>
+  </div>
+
+  <footer style="background:#1C1D1A; color:#EDE8DF; padding:28px clamp(20px,4vw,56px);">
+    <div style="max-width:1280px; margin:0 auto; display:flex; flex-wrap:wrap; justify-content:space-between; gap:12px; font-size:13px; opacity:.7;">
+      <span>© BIOSOMA Mountain Retreat · Красная Поляна</span>
+      <a href="index.html" style="color:#EDE8DF;">Вернуться на сайт</a>
+    </div>
+  </footer>
+</div>
+</x-dc>
+<script type="text/x-dc" data-dc-script>
+class Component extends DCLogic {
+  state = { active: 'offer', wide: true };
+  componentDidMount() {
+    this._mq = window.matchMedia('(min-width: 900px)');
+    const onMq = () => this.setState({ wide: this._mq.matches });
+    onMq(); this._mq.addEventListener('change', onMq); this._onMq = onMq;
+    const ids = ['offer', 'cancel', 'policy', 'consent'];
+    this._io = new IntersectionObserver(es => { es.forEach(e => { if (e.isIntersecting) this.setState({ active: e.target.id }); }); }, { rootMargin: '-30% 0px -60% 0px' });
+    ids.forEach(id => { const el = document.getElementById(id); if (el) this._io.observe(el); });
+    const h = (location.hash || '').slice(1);
+    if (ids.indexOf(h) >= 0) requestAnimationFrame(() => { const el = document.getElementById(h); if (el) window.scrollTo({ top: el.getBoundingClientRect().top + window.scrollY - 88, behavior: 'auto' }); this.setState({ active: h }); });
+  }
+  componentWillUnmount() {
+    if (this._io) this._io.disconnect();
+    if (this._mq && this._onMq) this._mq.removeEventListener('change', this._onMq);
+  }
+  renderVals() {
+    const T = [['offer', '01', 'Публичная оферта'], ['cancel', '02', 'Правила отмены и возврата'], ['policy', '03', 'Политика обработки персональных данных'], ['consent', '04', 'Согласие на обработку персональных данных']];
+    return {
+      toc: T.map(([id, n, title]) => ({ href: '#' + id, n, title, fg: this.state.active === id ? '#22231F' : '#6B665E', fw: this.state.active === id ? 500 : 400 })),
+      asidePos: this.state.wide ? 'sticky' : 'static'
+    };
+  }
+}
+</script>
+</body>
+</html>
