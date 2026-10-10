@@ -1,8 +1,21 @@
 <!DOCTYPE html>
-<html>
+<html lang="ru">
 <head>
 <meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>BIOSOMA Mountain Retreat — горный wellness-ретрит в Красной Поляне</title>
+<meta name="description" content="Ретрит на 3–14 дней в Красной Поляне: сон, движение, дыхание, питание FOOD LAB, SPA, тепло и холод. Программы RESET, DETOX, LONGEVITY и DEEP RESET — цены и ближайшие заезды.">
+<link rel="canonical" href="https://example.ru/">
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<meta name="theme-color" content="#E8E3DA">
+<meta property="og:type" content="website">
+<meta property="og:locale" content="ru_RU">
+<meta property="og:title" content="BIOSOMA Mountain Retreat — горный wellness-ретрит в Красной Поляне">
+<meta property="og:description" content="Ретрит на 3–14 дней в Красной Поляне: сон, движение, дыхание, питание FOOD LAB, SPA, тепло и холод. Программы RESET, DETOX, LONGEVITY и DEEP RESET — цены и ближайшие заезды.">
+<meta property="og:image" content="https://example.ru/img/biosoma/hero.jpg">
+<meta property="og:url" content="https://example.ru/">
+<link rel="preload" as="image" href="img/biosoma/hero.jpg">
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"Resort","name":"BIOSOMA Mountain Retreat","description":"Горный wellness-ретрит в Красной Поляне: программы RESET, DETOX, LONGEVITY и DEEP RESET.","url":"https://example.ru/","image":"https://example.ru/img/biosoma/hero.jpg","telephone":"+7-000-000-00-00","email":"booking@example.ru","priceRange":"₽₽₽₽","address":{"@type":"PostalAddress","streetAddress":"[адрес]","addressLocality":"Красная Поляна","addressRegion":"Краснодарский край","addressCountry":"RU"},"makesOffer":[{"@type":"Offer","name":"BIOSOMA RESET · 3 дня / 2 ночи","price":"89000","priceCurrency":"RUB"},{"@type":"Offer","name":"BIOSOMA DETOX · 5 дней / 4 ночи","price":"168000","priceCurrency":"RUB"},{"@type":"Offer","name":"BIOSOMA LONGEVITY · 7 дней / 6 ночей","price":"256000","priceCurrency":"RUB"},{"@type":"Offer","name":"BIOSOMA DEEP RESET · 10–14 дней","price":"390000","priceCurrency":"RUB"},{"@type":"Offer","name":"DAY RETREAT","price":"18000","priceCurrency":"RUB"}]}</script>
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <script src="./support.js"></script>
 </head>
 <body>
@@ -12,6 +25,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Onest:wght@200;300;400;500;600&display=swap" rel="stylesheet">
+  <script src="./image-slot.js"></script>
   <style>
     html { scroll-behavior: smooth; }
     body { margin: 0; background: #E8E3DA; color: #22231F; font-family: 'Onest', system-ui, sans-serif; -webkit-font-smoothing: antialiased; text-rendering: optimizeLegibility; }
@@ -33,7 +47,7 @@
   <!-- NAV -->
   <header style="position:fixed; inset:0 0 auto 0; z-index:50; height:68px;">
     <div style="position:absolute; inset:0; background:rgba(232,227,218,0.88); backdrop-filter:blur(14px); border-bottom:1px solid rgba(34,35,31,0.08); opacity: {{ navBgOpacity }}; transition: opacity .5s ease;"></div>
-    <div style="position:relative; height:100%; max-width:1480px; margin:0 auto; padding:0 clamp(20px,4vw,56px); display:flex; align-items:center; justify-content:space-between; gap:24px; color: {{ navInk }}; transition: color .5s ease;">
+    <div style="position:relative; height:100%; max-width:calc(1480px + 2 * clamp(20px, 4vw, 56px)); margin:0 auto; padding:0 clamp(20px,4vw,56px); display:flex; align-items:center; justify-content:space-between; gap:24px; color: {{ navInk }}; transition: color .5s ease;">
       <a href="#top" style="display:flex; align-items:center; gap:12px; color:inherit;">
         <svg viewBox="0 0 600 440" aria-hidden="true" fill="currentColor" style="display:block; height:22px; width:auto; flex:none;"><path d="M245 80.5 L279 43.1 L279 430 L245 430 Z"></path><path d="M169 164.1 L203 126.7 L203 430 L169 430 Z"></path><path d="M93 247.7 L127 210.3 L127 430 L93 430 Z"></path><path d="M17 331.3 L51 293.9 L51 430 L17 430 Z"></path><path d="M321 43.1 L355 80.5 L355 430 L321 430 Z"></path><path d="M397 126.7 L431 164.1 L431 430 L397 430 Z"></path><path d="M473 210.3 L507 247.7 L507 430 L473 430 Z"></path><path d="M549 293.9 L583 331.3 L583 430 L549 430 Z"></path></svg>
         <span style="font-size:17px; font-weight:600; letter-spacing:0.22em;">BIOSOMA</span>
@@ -43,6 +57,7 @@
         <nav style="display:flex; gap:clamp(16px,2.2vw,34px); font-size:14px; font-weight:400; letter-spacing:0.01em;">
           <a href="#method" style="color:inherit; opacity:.85; white-space:nowrap;" style-hover="opacity:1">Метод</a>
           <a href="#programs" style="color:inherit; opacity:.85; white-space:nowrap;" style-hover="opacity:1">Программы</a>
+          <a href="#prices" style="color:inherit; opacity:.85; white-space:nowrap;" style-hover="opacity:1">Цены</a>
           <a href="#h72" style="color:inherit; opacity:.85; white-space:nowrap;" style-hover="opacity:1">72 часа</a>
           <a href="#spaces" style="color:inherit; opacity:.85; white-space:nowrap;" style-hover="opacity:1">Пространства</a>
           <a href="#kitchen" style="color:inherit; opacity:.85; white-space:nowrap;" style-hover="opacity:1">Кухня</a>
@@ -60,18 +75,30 @@
       </div>
     </div>
     <sc-if value="{{ menuOpen }}" hint-placeholder-val="{{ false }}">
-      <div style="position:absolute; top:68px; left:0; right:0; background:#E8E3DA; border-bottom:1px solid rgba(34,35,31,0.1); padding:12px clamp(20px,4vw,56px) 24px; display:grid; gap:4px; animation: bsFade .4s ease both;">
-        <a href="#method" onClick="{{ closeMenu }}" style="padding:12px 0; border-bottom:1px solid rgba(34,35,31,0.08); color:#22231F; font-size:18px;">Метод</a>
-        <a href="#programs" onClick="{{ closeMenu }}" style="padding:12px 0; border-bottom:1px solid rgba(34,35,31,0.08); color:#22231F; font-size:18px;">Программы</a>
-        <a href="#h72" onClick="{{ closeMenu }}" style="padding:12px 0; border-bottom:1px solid rgba(34,35,31,0.08); color:#22231F; font-size:18px;">72 часа</a>
-        <a href="#spaces" onClick="{{ closeMenu }}" style="padding:12px 0; border-bottom:1px solid rgba(34,35,31,0.08); color:#22231F; font-size:18px;">Пространства</a>
-        <a href="#kitchen" onClick="{{ closeMenu }}" style="padding:12px 0; border-bottom:1px solid rgba(34,35,31,0.08); color:#22231F; font-size:18px;">Кухня</a>
-        <a href="#sleep" onClick="{{ closeMenu }}" style="padding:12px 0; border-bottom:1px solid rgba(34,35,31,0.08); color:#22231F; font-size:18px;">Сон</a>
-        <a href="#rooms" onClick="{{ closeMenu }}" style="padding:12px 0; border-bottom:1px solid rgba(34,35,31,0.08); color:#22231F; font-size:18px;">Номера</a>
+      <div style="position:absolute; top:68px; left:0; right:0; max-height:calc(100svh - 68px); overflow-y:auto; overscroll-behavior:contain; background:#E8E3DA; border-bottom:1px solid rgba(34,35,31,0.1); padding:12px clamp(20px,4vw,56px) 24px; display:grid; gap:4px; animation: bsFade .4s ease both;">
+        <a href="#method" onClick="{{ closeMenu }}" style="padding:10px 0; border-bottom:1px solid rgba(34,35,31,0.08); color:#22231F; font-size:18px;">Метод</a>
+        <a href="#programs" onClick="{{ closeMenu }}" style="padding:10px 0; border-bottom:1px solid rgba(34,35,31,0.08); color:#22231F; font-size:18px;">Программы</a>
+        <a href="#prices" onClick="{{ closeMenu }}" style="padding:10px 0; border-bottom:1px solid rgba(34,35,31,0.08); color:#22231F; font-size:18px;">Цены и даты</a>
+        <a href="#h72" onClick="{{ closeMenu }}" style="padding:10px 0; border-bottom:1px solid rgba(34,35,31,0.08); color:#22231F; font-size:18px;">72 часа</a>
+        <a href="#spaces" onClick="{{ closeMenu }}" style="padding:10px 0; border-bottom:1px solid rgba(34,35,31,0.08); color:#22231F; font-size:18px;">Пространства</a>
+        <a href="#kitchen" onClick="{{ closeMenu }}" style="padding:10px 0; border-bottom:1px solid rgba(34,35,31,0.08); color:#22231F; font-size:18px;">Кухня</a>
+        <a href="#sleep" onClick="{{ closeMenu }}" style="padding:10px 0; border-bottom:1px solid rgba(34,35,31,0.08); color:#22231F; font-size:18px;">Сон</a>
+        <a href="#rooms" onClick="{{ closeMenu }}" style="padding:10px 0; border-bottom:1px solid rgba(34,35,31,0.08); color:#22231F; font-size:18px;">Номера</a>
         <a href="#programs" onClick="{{ closeMenu }}" style="margin-top:12px; display:inline-flex; align-items:center; justify-content:center; height:52px; background:#33503F; color:#E8E3DA; font-size:15px; font-weight:500;">Выбрать программу</a>
+        <div style="display:flex; gap:10px; margin-top:6px;"><a href="https://t.me/" target="_blank" rel="noopener" style="flex:1; display:inline-flex; align-items:center; justify-content:center; height:48px; border:1px solid rgba(34,35,31,0.3); color:#22231F; font-size:15px;">Telegram</a><a href="tel:+70000000000" style="flex:1; display:inline-flex; align-items:center; justify-content:center; height:48px; border:1px solid rgba(34,35,31,0.3); color:#22231F; font-size:15px;">Позвонить</a></div>
       </div>
     </sc-if>
   </header>
+
+  <sc-if value="{{ narrow }}" hint-placeholder-val="{{ false }}">
+    <div style="position:fixed; left:12px; right:12px; bottom:calc(12px + env(safe-area-inset-bottom, 0px)); z-index:45; display:flex; align-items:center; justify-content:space-between; gap:12px; padding:8px 8px 8px 18px; background:rgba(34,35,31,0.92); backdrop-filter:blur(12px); -webkit-backdrop-filter:blur(12px); color:#F1EDE5; box-shadow:0 10px 30px rgba(0,0,0,0.18); transform: translateY({{ barTy }}); opacity: {{ barOp }}; pointer-events: {{ barPe }}; transition: transform .5s cubic-bezier(.16,1,.3,1), opacity .4s ease;">
+      <div style="display:grid; gap:2px; min-width:0;">
+        <span style="font-size:11px; letter-spacing:0.16em; text-transform:uppercase; opacity:.7; white-space:nowrap;">Ретрит от 3 дней</span>
+        <span style="font-size:15px; white-space:nowrap; overflow:hidden; text-overflow:ellipsis;">{{ barPrice }}</span>
+      </div>
+      <a href="#book" style="flex:none; display:inline-flex; align-items:center; height:46px; padding:0 18px; background:#C9A57B; color:#22231F; font-size:14px; font-weight:500; white-space:nowrap;">Забронировать</a>
+    </div>
+  </sc-if>
 
   <!-- HERO -->
   <section id="top" data-screen-label="Hero" style="position:relative; min-height:100svh; display:flex; align-items:flex-end; overflow:hidden; background:#5B5F58;">
@@ -86,7 +113,7 @@
     </sc-if>
     <div style="position:absolute; inset:0; background: linear-gradient(180deg, rgba(34,35,31,0.18) 0%, rgba(34,35,31,0) 30%, rgba(34,35,31,0.08) 55%, rgba(34,35,31,0.72) 100%);"></div>
     <div data-hero-sentinel="1" style="position:absolute; top:0; left:0; width:1px; height:120px;"></div>
-    <div style="position:relative; width:100%; max-width:1480px; margin:0 auto; padding: 140px clamp(20px,4vw,56px) clamp(40px,6vh,72px); display:flex; flex-wrap:wrap; justify-content:space-between; align-items:flex-end; gap:32px; color:#F1EDE5;">
+    <div style="position:relative; width:100%; max-width:calc(1480px + 2 * clamp(20px, 4vw, 56px)); margin:0 auto; padding: 140px clamp(20px,4vw,56px) clamp(40px,6vh,72px); display:flex; flex-wrap:wrap; justify-content:space-between; align-items:flex-end; gap:32px; color:#F1EDE5;">
       <div style="flex: 1 1 560px; min-width:0; display:grid; gap:28px; max-width:860px;">
         <div style="font-size:12px; letter-spacing:0.22em; text-transform:uppercase; opacity:.85; animation: bsFade .9s .1s cubic-bezier(.16,1,.3,1) both;">Красная Поляна · Retreat &amp; Longevity Resort</div>
         <h1 style="margin:0; font-size:clamp(38px, 5.4vw, 84px); line-height:1.02; font-weight:300; letter-spacing:-0.025em; text-wrap:balance; animation: bsFade 1s .25s cubic-bezier(.16,1,.3,1) both;">Вы приехали уставшим. Уехали другим человеком.</h1>
@@ -106,11 +133,12 @@
   <!-- ROUTE -->
   <section data-screen-label="Маршрут" style="position:relative; min-height:100vh; display:flex; flex-direction:column; justify-content:center; padding: clamp(88px,12vh,124px) clamp(20px,4vw,56px) clamp(32px,6vh,64px);">
     <sc-if value="{{ artOn }}" hint-placeholder-val="{{ true }}">
-      <div aria-hidden="true" style="position:absolute; inset:0; overflow:hidden; pointer-events:none;">
-        <img src="img/biosoma/art-topo.jpg" alt="" style="position:absolute; inset:0; width:100%; height:100%; object-fit:cover; object-position:center; mix-blend-mode:multiply; -webkit-mask-image: radial-gradient(ellipse 62% 70% at 50% 58%, transparent 0%, rgba(0,0,0,0.25) 45%, #000 88%); mask-image: radial-gradient(ellipse 62% 70% at 50% 58%, transparent 0%, rgba(0,0,0,0.25) 45%, #000 88%); opacity: {{ artOpL }};">
+      <div aria-hidden="true" style="position:absolute; left:0; right:0; top:0px; bottom:-140px; z-index:1; overflow:hidden; pointer-events:none; mix-blend-mode:multiply; opacity: {{ artOpL }}; -webkit-mask-image: linear-gradient(180deg, transparent 0, #000 160px, #000 calc(100% - 240px), transparent 100%); mask-image: linear-gradient(180deg, transparent 0, #000 160px, #000 calc(100% - 240px), transparent 100%);">
+        <img loading="lazy" decoding="async" src="img/biosoma/art-topo.jpg" alt="" style="position:absolute; inset:0; width:100%; height:100%; object-fit:cover; object-position:center; -webkit-mask-image: radial-gradient(ellipse 62% 70% at 50% 58%, transparent 0%, rgba(0,0,0,0.25) 45%, #000 88%); mask-image: radial-gradient(ellipse 62% 70% at 50% 58%, transparent 0%, rgba(0,0,0,0.25) 45%, #000 88%);">
       </div>
     </sc-if>
-    <div style="position:relative; width:100%; max-width:1480px; margin:0 auto; display:grid; gap:clamp(28px,5vh,56px);">
+    
+    <div style="position:relative; z-index:2; width:100%; max-width:1480px; margin:0 auto; display:grid; gap:clamp(28px,5vh,56px);">
       <div data-reveal="1" style="display:grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap:32px; align-items:end;">
         <h2 style="margin:0; font-size:clamp(30px, min(3.6vw, 6.4vh), 54px); line-height:1.08; font-weight:300; letter-spacing:-0.02em; text-wrap:balance;">Клиника отдыха без ощущения клиники</h2>
         <div style="display:grid; gap:14px; font-size:17px; line-height:1.55; color:#4E4A43; max-width:520px;">
@@ -180,29 +208,38 @@
   </section>
 
   <!-- METHOD -->
-  <section id="method" data-screen-label="Метод" style="padding: clamp(40px,5vw,80px) clamp(20px,4vw,56px) clamp(80px,10vw,150px);">
-    <div style="max-width:1480px; margin:0 auto;">
-      <div data-reveal="1" style="display:grid; grid-template-columns: {{ pilCols }}; grid-auto-flow: {{ pilFlow }}; grid-auto-columns: {{ pilAuto }}; overflow-x: {{ pilOverflow }}; scroll-snap-type: {{ pilSnap }}; scrollbar-width:none; gap:4px;">
-        <div style="grid-column: span 1; scroll-snap-align:start; background:#33503F; color:#EDE8DF; padding:clamp(28px,3vw,44px); min-height:300px; display:flex; flex-direction:column; justify-content:space-between; gap:40px;">
+  <section id="method" data-screen-label="Метод" style="position:relative; min-height:100vh; display:flex; flex-direction:column; justify-content:center; padding: clamp(84px,11vh,110px) clamp(20px,4vw,56px) clamp(24px,4vh,48px)">
+    <sc-if value="{{ artOn }}" hint-placeholder-val="{{ true }}">
+      <div aria-hidden="true" style="position:absolute; left:0; right:0; top:-140px; bottom:-140px; z-index:1; overflow:hidden; pointer-events:none; mix-blend-mode:multiply; opacity: {{ artOpL }}; -webkit-mask-image: linear-gradient(180deg, transparent 0, #000 240px, #000 calc(100% - 240px), transparent 100%); mask-image: linear-gradient(180deg, transparent 0, #000 240px, #000 calc(100% - 240px), transparent 100%);">
+        <img loading="lazy" decoding="async" src="img/biosoma/art-method.jpg" alt="" style="position:absolute; inset:0; width:100%; height:100%; object-fit:cover; object-position:center;">
+      </div>
+    </sc-if>
+    <div style="width:100%; position:relative; z-index:2; max-width:1480px; margin:0 auto;">
+      <div data-pillars="1" onMouseLeave="{{ pilLeave }}" style="display:grid; grid-template-columns: {{ pilCols }}; grid-auto-flow: {{ pilFlow }}; grid-auto-columns: {{ pilAuto }}; overflow-x: {{ pilOverflow }}; scroll-snap-type: {{ pilSnap }}; grid-auto-rows: {{ pilRows }}; scrollbar-width:none; gap:4px;">
+        <div style="grid-column: span 1; scroll-snap-align:start; clip-path: {{ introClip }}; transition: clip-path 1.2s cubic-bezier(.77,0,.18,1); background:#33503F; color:#EDE8DF; padding:clamp(20px, min(2.4vw, 3.4vh), 40px); min-height: {{ pilMinH }}; display:flex; flex-direction:column; justify-content:space-between; gap:16px;">
           <div style="display:flex; justify-content:space-between; align-items:flex-start; gap:16px;">
-            <div style="font-size:12px; letter-spacing:0.22em; text-transform:uppercase; opacity:.8; padding-top:4px;">BIOSOMA Method</div>
-            <svg viewBox="0 0 600 440" aria-hidden="true" fill="currentColor" style="display:block; height:64px; width:auto; flex:none;"><path d="M245 80.5 L279 43.1 L279 430 L245 430 Z"></path><path d="M169 164.1 L203 126.7 L203 430 L169 430 Z"></path><path d="M93 247.7 L127 210.3 L127 430 L93 430 Z"></path><path d="M17 331.3 L51 293.9 L51 430 L17 430 Z"></path><path d="M321 43.1 L355 80.5 L355 430 L321 430 Z"></path><path d="M397 126.7 L431 164.1 L431 430 L397 430 Z"></path><path d="M473 210.3 L507 247.7 L507 430 L473 430 Z"></path><path d="M549 293.9 L583 331.3 L583 430 L549 430 Z"></path></svg>
+            <div style="font-size:12px; letter-spacing:0.22em; text-transform:uppercase; opacity:.85; padding-top:4px; transition: opacity .3s ease;">{{ introLabel }}</div>
+            <svg viewBox="0 0 600 440" aria-hidden="true" style="display:block; height:52px; width:auto; flex:none; overflow:visible;">
+              <sc-for list="{{ bars }}" as="b" hint-placeholder-count="8">
+                <path d="{{ b.d }}" style="fill: {{ b.fill }}; transform: scaleY({{ b.sy }}); transform-box: fill-box; transform-origin: 50% 100%; transition: transform .9s cubic-bezier(.16,1,.3,1) {{ b.delay }}, fill .4s ease;"></path>
+              </sc-for>
+            </svg>
           </div>
           <div>
-            <h2 style="margin:0 0 14px; font-size:clamp(28px,2.6vw,40px); line-height:1.1; font-weight:300; letter-spacing:-0.02em;">Восемь опор одной методики</h2>
-            <p style="margin:0; font-size:15px; line-height:1.55; opacity:.85; max-width:40ch;">Не отель с набором услуг, а собственная система восстановления, которую можно повторить дома.</p>
+            <h2 style="margin:0 0 10px; font-size:clamp(24px, min(2.4vw, 4vh), 40px); line-height:1.1; font-weight:300; letter-spacing:-0.02em;">Восемь опор одной методики</h2>
+            <p style="margin:0; font-size:14px; line-height:1.5; opacity:.85; max-width:44ch;">Не отель с набором услуг, а собственная система восстановления, которую можно повторить дома.</p>
           </div>
         </div>
         <sc-for list="{{ pillars }}" as="p" hint-placeholder-count="8">
-          <div style="position:relative; overflow:hidden; scroll-snap-align:start; min-height:300px; background: {{ p.bg }}; color: {{ p.fg }}; display:flex; flex-direction:column; justify-content:space-between; padding:clamp(24px,2.6vw,36px);" style-hover="background: {{ p.bgHover }}">
-            <sc-if value="{{ p.img }}" hint-placeholder-val="{{ false }}">
-              <img src="{{ p.img }}" alt="{{ p.ru }}" style="position:absolute; inset:0; width:100%; height:100%; object-fit:cover; transition: transform 1.4s cubic-bezier(.16,1,.3,1);" style-hover="transform:scale(1.04)">
-              <div style="position:absolute; inset:0; background: linear-gradient(180deg, rgba(34,35,31,0.1) 0%, rgba(34,35,31,0.78) 100%);"></div>
-            </sc-if>
-            <div style="position:relative; display:flex; justify-content:space-between; font-size:12px; letter-spacing:0.14em; font-variant-numeric:tabular-nums; opacity:.75;"><span>{{ p.n }}</span><span>{{ p.en }}</span></div>
-            <div style="position:relative;">
-              <div style="font-size:clamp(26px,2.4vw,38px); font-weight:300; letter-spacing:-0.02em; line-height:1.05; margin-bottom:10px;">{{ p.ru }}</div>
-              <div style="font-size:14px; line-height:1.5; opacity:.85; max-width:36ch;">{{ p.text }}</div>
+          <div onMouseEnter="{{ p.enter }}" style="position:relative; overflow:hidden; scroll-snap-align:start; min-height: {{ pilMinH }}; background:#5B5F58; color:#F1EDE5; display:flex; flex-direction:column; justify-content:space-between; padding:clamp(18px, min(2.4vw, 3.4vh), 36px); clip-path: {{ p.clip }}; transition: clip-path 1.2s cubic-bezier(.77,0,.18,1) {{ p.delay }};">
+            <img loading="lazy" decoding="async" src="{{ p.img }}" alt="{{ p.ru }}" style="position:absolute; inset:0; width:100%; height:100%; object-fit:cover; transform: scale({{ p.scale }}); filter: {{ p.filter }}; transition: transform 1.6s cubic-bezier(.16,1,.3,1), filter .6s ease;">
+            <div style="position:absolute; inset:0; background: linear-gradient(180deg, rgba(24,24,21,0.55) 0%, rgba(24,24,21,0) 30%, rgba(24,24,21,0.12) 52%, rgba(24,24,21,0.82) 100%);"></div>
+            <div style="position:absolute; inset:0; background:rgba(24,24,21,0.5); opacity: {{ p.dim }}; transition: opacity .6s ease;"></div>
+            <div style="position:relative; display:flex; justify-content:space-between; align-items:center; gap:12px; font-size:12px; letter-spacing:0.16em; font-weight:500; font-variant-numeric:tabular-nums; opacity: {{ p.op }}; transition: opacity .8s ease {{ p.delay2 }};"><span>{{ p.n }}</span><span style="padding:6px 10px; background: {{ p.pillBg }}; border:1px solid {{ p.pillBorder }}; color: {{ p.pillFg }}; backdrop-filter:blur(6px); -webkit-backdrop-filter:blur(6px); transition: background .4s ease, color .4s ease, border-color .4s ease;">{{ p.en }}</span></div>
+            <div style="position:relative; opacity: {{ p.op }}; transform: translateY({{ p.ty }}); transition: opacity .8s ease {{ p.delay2 }}, transform .9s cubic-bezier(.16,1,.3,1) {{ p.delay2 }};">
+              <div style="font-size:clamp(22px, min(2.4vw, 4.2vh), 38px); font-weight:300; letter-spacing:-0.02em; line-height:1.05; margin-bottom:8px;">{{ p.ru }}</div>
+              <div style="height:1px; width: {{ p.line }}; background:#C9A57B; margin-bottom:10px; transition: width .6s cubic-bezier(.16,1,.3,1);"></div>
+              <div style="font-size:14px; line-height:1.5; opacity:.88; max-width:36ch;">{{ p.text }}</div>
             </div>
           </div>
         </sc-for>
@@ -211,16 +248,21 @@
   </section>
 
   <!-- PROGRAMS -->
-  <section id="programs" data-screen-label="Программы" style="padding: clamp(80px,10vw,150px) clamp(20px,4vw,56px); background:#DFD8CC;">
-    <div style="max-width:1480px; margin:0 auto; display:grid; gap:clamp(40px,5vw,72px);">
-      <div data-reveal="1" style="max-width:820px;">
-        <h2 style="margin:0 0 20px; font-size:clamp(32px,4vw,60px); line-height:1.05; font-weight:300; letter-spacing:-0.025em; text-wrap:balance;">Мы не продаём номер на ночь. Мы продаём ретрит.</h2>
-        <p style="margin:0; font-size:17px; line-height:1.55; color:#4E4A43; max-width:60ch;">Выберите длительность — программа соберётся вокруг неё: сон, питание, SPA, движение и работа в BIOSOMA LAB.</p>
+  <section id="programs" data-screen-label="Программы" style="position:relative; min-height:100vh; display:flex; flex-direction:column; justify-content:center; padding: clamp(88px,12vh,124px) clamp(20px,4vw,56px) clamp(32px,6vh,64px); background:#DFD8CC;">
+    <sc-if value="{{ artOn }}" hint-placeholder-val="{{ true }}">
+      <div aria-hidden="true" style="position:absolute; left:0; right:0; top:-140px; bottom:-140px; z-index:1; overflow:hidden; pointer-events:none; mix-blend-mode:multiply; opacity: {{ artOpL }}; -webkit-mask-image: linear-gradient(180deg, transparent 0, #000 240px, #000 calc(100% - 240px), transparent 100%); mask-image: linear-gradient(180deg, transparent 0, #000 240px, #000 calc(100% - 240px), transparent 100%);">
+        <img loading="lazy" decoding="async" src="img/biosoma/art-programs.jpg" alt="" style="position:absolute; inset:0; width:100%; height:100%; object-fit:cover; object-position:center;">
+      </div>
+    </sc-if>
+    <div style="position:relative; z-index:2; width:100%; max-width:1480px; margin:0 auto; display:grid; gap:clamp(20px,3.6vh,40px);">
+      <div data-reveal="1" style="display:flex; flex-wrap:wrap; justify-content:space-between; align-items:flex-end; gap:14px 48px;">
+        <h2 style="margin:0; max-width:820px; font-size:clamp(30px, min(4vw, 6.4vh), 60px); line-height:1.05; font-weight:300; letter-spacing:-0.025em; text-wrap:balance;">Мы не продаём номер на ночь. Мы продаём ретрит.</h2>
+        <p style="margin:0; font-size:17px; line-height:1.55; color:#4E4A43; max-width:46ch;">Выберите длительность — программа соберётся вокруг неё: сон, питание, SPA, движение и работа в BIOSOMA LAB.</p>
       </div>
       <div data-progs="1" style="display:flex; flex-direction: {{ progDir }}; gap:6px; height: {{ progH }};">
         <sc-for list="{{ programs }}" as="p" hint-placeholder-count="4">
           <div tabIndex="0" aria-label="{{ p.aria }}" onClick="{{ p.open }}" onFocus="{{ p.open }}" onMouseEnter="{{ p.hover }}" onMouseLeave="{{ p.unhover }}" style="position:relative; overflow:hidden; cursor:pointer; min-width:0; min-height:0; background:#2A2B26; color:#F1EDE5; flex: {{ p.flex }}; height: {{ p.h }}; clip-path: {{ p.clip }}; transition: flex-grow .9s cubic-bezier(.16,1,.3,1), height .9s cubic-bezier(.16,1,.3,1), clip-path 1.3s cubic-bezier(.77,0,.18,1) {{ p.clipDelay }};">
-            <img src="{{ p.img }}" alt="{{ p.aria }}" style="position:absolute; inset:0; width:100%; height:100%; object-fit:cover; transform: scale({{ p.imgScale }}); transition: transform 1.8s cubic-bezier(.16,1,.3,1);">
+            <img loading="lazy" decoding="async" src="{{ p.img }}" alt="{{ p.aria }}" style="position:absolute; inset:0; width:100%; height:100%; object-fit:cover; transform: scale({{ p.imgScale }}); transition: transform 1.8s cubic-bezier(.16,1,.3,1);">
             <div style="position:absolute; inset:0; background: linear-gradient(180deg, rgba(24,24,21,0.5) 0%, rgba(24,24,21,0.06) 24%, rgba(24,24,21,0.16) 46%, rgba(24,24,21,0.88) 100%), linear-gradient(30deg, rgba(24,24,21,0.55) 0%, rgba(24,24,21,0) 55%);"></div>
             <div style="position:absolute; inset:0; background:rgba(30,27,22,0.42); opacity: {{ p.tint }}; transition: opacity .9s ease;"></div>
             <div style="position:absolute; inset:0; padding:26px 22px; display: {{ p.dH }}; flex-direction:column; justify-content:space-between; align-items:flex-start; opacity: {{ p.closedOp }}; transition: opacity .45s ease {{ p.closedDelay }}; pointer-events:none;">
@@ -237,31 +279,31 @@
               </div>
               <span style="font-size:12px; letter-spacing:0.08em; white-space:nowrap;">{{ p.dur }}</span>
             </div>
-            <div style="position:absolute; top:0; bottom:0; left:0; width: {{ p.cw }}; padding:clamp(22px,2.6vw,40px); display:flex; flex-direction:column; justify-content:space-between; gap:24px; opacity: {{ p.openOp }}; transform: translateY({{ p.openTy }}); transition: opacity .6s ease {{ p.openDelay }}, transform .9s cubic-bezier(.16,1,.3,1) {{ p.openDelay }}; pointer-events: {{ p.openPe }};">
+            <div style="position:absolute; top:0; bottom:0; left:0; width: {{ p.cw }}; padding:clamp(20px, min(2.4vw, 4.4vh), 36px); display:flex; flex-direction:column; justify-content:space-between; gap:16px; opacity: {{ p.openOp }}; transform: translateY({{ p.openTy }}); transition: opacity .6s ease {{ p.openDelay }}, transform .9s cubic-bezier(.16,1,.3,1) {{ p.openDelay }}; pointer-events: {{ p.openPe }};">
               <div style="display:flex; justify-content:space-between; align-items:baseline; gap:12px;">
                 <span style="font-size:12px; letter-spacing:0.2em;">{{ p.idx }} · BIOSOMA</span>
                 <span style="font-size:13px; letter-spacing:0.06em; font-variant-numeric:tabular-nums;">{{ p.dur }}</span>
               </div>
-              <div style="display:grid; gap:18px; max-width:560px;">
-                <div style="font-size:clamp(44px,5.2vw,84px); font-weight:300; letter-spacing:-0.03em; line-height:.95;">{{ p.name }}</div>
-                <p style="margin:0; font-size:17px; line-height:1.5; max-width:42ch; text-wrap:pretty;">{{ p.who }}</p>
-                <ul style="margin:0; padding:0; list-style:none; display:grid; gap:8px; font-size:15px; line-height:1.45;">
+              <div style="display:grid; gap:clamp(10px,1.8vh,18px); max-width:560px;">
+                <div style="font-size:clamp(40px, min(5.2vw, 8vh), 84px); font-weight:300; letter-spacing:-0.03em; line-height:.95;">{{ p.name }}</div>
+                <p style="margin:0; font-size:16px; line-height:1.5; max-width:48ch; text-wrap:pretty;">{{ p.who }}</p>
+                <ul style="margin:0; padding:0; list-style:none; display:grid; gap:6px; font-size:14px; line-height:1.45;">
                   <sc-for list="{{ p.items }}" as="it" hint-placeholder-count="3">
                     <li style="display:grid; grid-template-columns:18px 1fr; gap:10px; opacity: {{ it.op }}; transform: translateY({{ it.ty }}); transition: opacity .5s ease {{ it.delay }}, transform .7s cubic-bezier(.16,1,.3,1) {{ it.delay }};"><span style="color:#D9B88E;">—</span><span>{{ it.t }}</span></li>
                   </sc-for>
                 </ul>
-                <div style="display:flex; padding-top:6px;">
-                  <button onClick="{{ p.choose }}" tabIndex="{{ p.tab }}" style="display:inline-flex; align-items:center; gap:12px; height:52px; padding:0 26px; background:#C9A57B; color:#22231F; border:none; font-size:15px; font-weight:500; letter-spacing:0.02em; cursor:pointer; white-space:nowrap; transition: background .3s ease, transform .2s ease;" style-hover="background:#D9B88E" style-active="transform:scale(0.98)"><span>{{ p.cta }}</span><span>→</span></button>
+                <div style="display:flex; padding-top:2px;">
+                  <button onClick="{{ p.choose }}" tabIndex="{{ p.tab }}" style="display:inline-flex; align-items:center; gap:12px; height:48px; padding:0 24px; background:#C9A57B; color:#22231F; border:none; font-size:15px; font-weight:500; letter-spacing:0.02em; cursor:pointer; white-space:nowrap; transition: background .3s ease, transform .2s ease;" style-hover="background:#D9B88E" style-active="transform:scale(0.98)"><span>{{ p.cta }}</span><span>→</span></button>
                 </div>
               </div>
             </div>
           </div>
         </sc-for>
       </div>
-      <div data-reveal="1" style="display:grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap:32px; align-items:center; padding:clamp(24px,3vw,40px); border:1px solid rgba(34,35,31,0.18);">
+      <div data-reveal="1" style="display:grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap:16px 32px; align-items:center; padding:clamp(14px,2.2vh,26px) clamp(20px,2.4vw,32px); border:1px solid rgba(34,35,31,0.18);">
         <div>
-          <div style="font-size:12px; letter-spacing:0.2em; text-transform:uppercase; margin-bottom:10px; color:#A07C55;">Без проживания</div>
-          <div style="font-size:clamp(26px,2.4vw,36px); font-weight:300; letter-spacing:-0.02em; line-height:1.1;">DAY RETREAT</div>
+          <div style="font-size:12px; letter-spacing:0.2em; text-transform:uppercase; margin-bottom:6px; color:#A07C55;">Без проживания</div>
+          <div style="font-size:clamp(24px,2vw,30px); font-weight:300; letter-spacing:-0.02em; line-height:1.1;">DAY RETREAT</div>
         </div>
         <p style="margin:0; font-size:16px; line-height:1.55; color:#4E4A43; max-width:52ch;">Полноценный wellness-день для тех, кто приезжает из Сочи: термальная последовательность, движение, BIOSOMA KITCHEN и час тишины у воды.</p>
         <button onClick="{{ selectDay }}" style="justify-self:start; height:52px; padding:0 26px; background:transparent; border:1px solid #22231F; color:#22231F; font-size:15px; font-weight:500; cursor:pointer; white-space:nowrap; transition: background .3s ease, color .3s ease;" style-hover="background:#22231F; color:#E8E3DA">Выбрать</button>
@@ -269,33 +311,85 @@
     </div>
   </section>
 
-  <!-- 72 HOURS (dark block) -->
-  <section id="h72" data-screen-label="72 часа" style="position:relative; padding: clamp(90px,11vw,170px) clamp(20px,4vw,56px); background: {{ h72Bg }}; color:#EDE8DF; transition: background 1.6s ease;">
-    <div style="max-width:1480px; margin:0 auto; display:grid; gap:clamp(40px,5vw,72px);">
-      <div data-reveal="1" style="display:grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap:32px; align-items:end;">
-        <div>
-          <div style="font-size:12px; letter-spacing:0.22em; text-transform:uppercase; opacity:.7; margin-bottom:22px;">Главная программа</div>
-          <h2 style="margin:0; font-size:clamp(40px,5.2vw,92px); line-height:.98; font-weight:200; letter-spacing:-0.035em;"><span style="white-space:nowrap;">72 часа до</span><br>перезагрузки</h2>
-        </div>
-        <p style="margin:0; font-size:18px; line-height:1.55; opacity:.82; max-width:46ch; justify-self:end;">Три дня, чтобы снова почувствовать себя собой. Маршрут выстроен по часам — вам остаётся только следовать ему.</p>
+  <!-- PRICES -->
+  <section id="prices" data-screen-label="Цены и даты" style="position:relative; padding: clamp(56px,10vw,150px) clamp(20px,4vw,56px); background:#E8E3DA;">
+    <sc-if value="{{ artOn }}" hint-placeholder-val="{{ true }}">
+      <div aria-hidden="true" style="position:absolute; left:0; right:0; top:-140px; bottom:-140px; z-index:1; overflow:hidden; pointer-events:none; mix-blend-mode:multiply; opacity: {{ artOpL }}; -webkit-mask-image: linear-gradient(180deg, transparent 0, #000 240px, #000 calc(100% - 240px), transparent 100%); mask-image: linear-gradient(180deg, transparent 0, #000 240px, #000 calc(100% - 240px), transparent 100%);">
+        <img loading="lazy" decoding="async" src="img/biosoma/art-prices.jpg" alt="" style="position:absolute; inset:0; width:100%; height:100%; object-fit:cover; object-position:center;">
       </div>
-      <div data-h72="1" onMouseEnter="{{ h72Enter }}" onMouseLeave="{{ h72Leave }}" style="display:grid; gap:clamp(24px,3vw,40px);">
-        <div style="position:relative; height:clamp(440px, 58vh, 620px); overflow:hidden; background:#181916;">
+    </sc-if>
+    <div style="position:relative; z-index:2; max-width:1480px; margin:0 auto; display:grid; gap:clamp(32px,4vw,56px);">
+      <div data-reveal="1" style="display:flex; flex-wrap:wrap; justify-content:space-between; align-items:flex-end; gap:16px 48px;"><div><div style="font-size:12px; letter-spacing:0.22em; text-transform:uppercase; color:#A07C55; margin-bottom:16px;">Цены и даты</div><h2 style="margin:0; font-size:clamp(32px,4vw,60px); line-height:1.05; font-weight:300; letter-spacing:-0.025em; text-wrap:balance;">Сколько стоит перезагрузка</h2></div><p style="margin:0; font-size:16px; line-height:1.55; color:#4E4A43; max-width:48ch;">Цена за одного гостя: проживание, питание FOOD LAB, SPA и все практики программы. Предоплата 30% закрепляет бронь, бесплатная отмена — за 14 дней до заезда. <a href="docs.html#cancel" style="color:#33503F; text-decoration:underline; text-underline-offset:3px;">Правила отмены</a></p></div>
+      <div data-reveal="1" style="display:grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 260px), 1fr)); gap:2px; background:rgba(34,35,31,0.12); border:1px solid rgba(34,35,31,0.12);">
+        <sc-for list="{{ prices }}" as="p" hint-placeholder-count="4">
+          <div style="background:#E8E3DA; padding:clamp(24px,2.4vw,36px); display:flex; flex-direction:column; gap:22px;">
+            <div style="display:grid; gap:8px;">
+              <div style="min-height:14px; font-size:11px; letter-spacing:0.18em; text-transform:uppercase; color:#A07C55;">{{ p.badge }}</div>
+              <div style="display:flex; justify-content:space-between; align-items:baseline; gap:12px;">
+                <span style="font-size:clamp(24px,2vw,30px); font-weight:300; letter-spacing:0.01em;">{{ p.name }}</span>
+                <span style="font-size:12px; letter-spacing:0.06em; color:#6B665E; white-space:nowrap;">{{ p.dur }}</span>
+              </div>
+            </div>
+            <div style="display:grid; gap:6px; padding-bottom:18px; border-bottom:1px solid rgba(34,35,31,0.12);">
+              <div style="font-size:clamp(30px,2.8vw,42px); font-weight:300; letter-spacing:-0.02em; line-height:1; white-space:nowrap;">{{ p.price }}</div>
+              <div style="font-size:13px; color:#6B665E;">{{ p.per }}</div>
+            </div>
+            <ul style="margin:0; padding:0; list-style:none; display:grid; gap:9px; font-size:14px; line-height:1.45; flex:1; align-content:start;">
+              <sc-for list="{{ p.inc }}" as="it" hint-placeholder-count="6">
+                <li style="display:grid; grid-template-columns:16px 1fr; gap:10px;"><span style="color:#A07C55;">—</span><span>{{ it }}</span></li>
+              </sc-for>
+            </ul>
+            <div style="display:grid; gap:10px;">
+              <div style="font-size:11px; letter-spacing:0.18em; text-transform:uppercase; color:#6B665E;">Ближайшие заезды</div>
+              <div style="display:flex; flex-wrap:wrap; gap:6px;">
+                <sc-for list="{{ p.dates }}" as="dt" hint-placeholder-count="3">
+                  <button onClick="{{ dt.pick }}" style="all:unset; cursor:pointer; box-sizing:border-box; display:inline-flex; align-items:center; min-height:44px; padding:10px 12px; font-size:13px; border:1px solid rgba(34,35,31,0.25); white-space:nowrap; transition: background .3s ease, color .3s ease, border-color .3s ease;" style-hover="background:#22231F; color:#E8E3DA; border-color:#22231F">{{ dt.label }}</button>
+                </sc-for>
+              </div>
+            </div>
+            <button onClick="{{ p.choose }}" style="all:unset; cursor:pointer; box-sizing:border-box; display:flex; align-items:center; justify-content:space-between; height:50px; padding:0 18px; background:#33503F; color:#E8E3DA; font-size:14px; font-weight:500; letter-spacing:0.02em; transition: background .3s ease;" style-hover="background:#2A4234"><span>Выбрать даты</span><span>→</span></button>
+          </div>
+        </sc-for>
+      </div>
+      <div data-reveal="1" style="display:flex; flex-wrap:wrap; justify-content:space-between; align-items:center; gap:12px 32px; font-size:15px; line-height:1.5; color:#4E4A43;">
+        <div style="display:flex; flex-wrap:wrap; align-items:baseline; gap:6px 16px;"><span style="font-size:20px; font-weight:300; color:#22231F;">DAY RETREAT</span><span>один день без проживания · {{ dayPrice }} за гостя</span></div>
+        <div>Корпоративные ретриты для команд — <a href="#book" style="color:#33503F; text-decoration:underline; text-underline-offset:3px;">по запросу</a></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 72 HOURS (dark block) -->
+  <section id="h72" data-screen-label="72 часа" style="position:relative; min-height:100vh; display:flex; flex-direction:column; justify-content:center; padding: clamp(88px,12vh,124px) clamp(20px,4vw,56px) clamp(32px,6vh,64px); background: {{ h72Bg }}; color:#EDE8DF; transition: background 1.6s ease;">
+    <sc-if value="{{ artOn }}" hint-placeholder-val="{{ true }}">
+      <div aria-hidden="true" style="position:absolute; left:0; right:0; top:-140px; bottom:-140px; z-index:1; overflow:hidden; pointer-events:none; mix-blend-mode:screen; opacity: {{ artOpD }}; -webkit-mask-image: linear-gradient(180deg, transparent 0, #000 240px, #000 calc(100% - 240px), transparent 100%); mask-image: linear-gradient(180deg, transparent 0, #000 240px, #000 calc(100% - 240px), transparent 100%);">
+        <img loading="lazy" decoding="async" src="img/biosoma/art-h72.jpg" alt="" style="position:absolute; inset:0; width:100%; height:100%; object-fit:cover; object-position:center;">
+      </div>
+    </sc-if>
+    <div style="position:relative; z-index:2; width:100%; max-width:1480px; margin:0 auto; display:grid; gap:clamp(22px,4vh,44px);">
+      <div data-reveal="1" style="display:flex; flex-wrap:wrap; justify-content:space-between; align-items:flex-end; gap:16px 48px;">
+        <div>
+          <div style="font-size:12px; letter-spacing:0.22em; text-transform:uppercase; opacity:.7; margin-bottom:14px;">Главная программа</div>
+          <h2 style="margin:0; font-size:clamp(36px, min(4.8vw, 7.4vh), 80px); line-height:1; font-weight:200; letter-spacing:-0.035em;">72 часа до перезагрузки</h2>
+        </div>
+        <p style="margin:0; font-size:17px; line-height:1.55; opacity:.82; max-width:44ch;">Три дня, чтобы снова почувствовать себя собой. Маршрут выстроен по часам — вам остаётся только следовать ему.</p>
+      </div>
+      <div data-h72="1" onMouseEnter="{{ h72Enter }}" onMouseLeave="{{ h72Leave }}" style="display:flex; flex-wrap:wrap; gap:clamp(16px,2vw,28px); align-items:stretch;">
+        <div style="flex: 1.75 1 560px; min-width:0; position:relative; height:clamp(380px, calc(100vh - 330px), 660px); overflow:hidden; background:#181916;">
           <sc-for list="{{ h72Days }}" as="d" hint-placeholder-count="3">
-            <img src="{{ d.art }}" alt="{{ d.alt }}" style="position:absolute; inset:0; width:100%; height:100%; object-fit:cover; object-position:center; opacity: {{ d.artOp }}; transform: scale({{ d.artScale }}); transition: {{ d.artTr }};">
+            <img loading="lazy" decoding="async" src="{{ d.art }}" alt="{{ d.alt }}" style="position:absolute; inset:0; width:100%; height:100%; object-fit:cover; object-position:center; opacity: {{ d.artOp }}; transform: scale({{ d.artScale }}); transition: {{ d.artTr }};">
           </sc-for>
           <div style="position:absolute; inset:0; background: linear-gradient(90deg, rgba(20,20,18,0.88) 0%, rgba(20,20,18,0.6) 34%, rgba(20,20,18,0.1) 68%, rgba(20,20,18,0) 100%), linear-gradient(0deg, rgba(20,20,18,0.9) 0%, rgba(20,20,18,0) 42%);"></div>
-          <div style="position:absolute; top:clamp(18px,2.4vw,32px); right:clamp(18px,2.4vw,32px); left:clamp(18px,2.4vw,32px); display:flex; flex-wrap:wrap; justify-content:flex-end; gap:8px;">
+          <div style="position:absolute; top:clamp(16px,2vw,28px); right:clamp(16px,2vw,28px); left:clamp(16px,2vw,28px); display:flex; flex-wrap:wrap; justify-content:flex-end; gap:8px;">
             <sc-for list="{{ h72Days }}" as="d" hint-placeholder-count="3">
               <button onClick="{{ d.go }}" style="all:unset; cursor:pointer; padding:11px 16px; font-size:12px; letter-spacing:0.16em; text-transform:uppercase; white-space:nowrap; border:1px solid {{ d.pillBorder }}; background: {{ d.pillBg }}; color: {{ d.pillFg }}; backdrop-filter:blur(8px); -webkit-backdrop-filter:blur(8px); transition: background .5s ease, color .5s ease, border-color .5s ease;">{{ d.pill }}</button>
             </sc-for>
           </div>
-          <div style="position:absolute; left:clamp(20px,3vw,48px); right:clamp(20px,3vw,48px); bottom:clamp(92px,9vw,124px); display:grid; gap:10px; opacity: {{ fxOp }}; transform: translateY({{ fxTy }}); transition: {{ fxTr }};">
+          <div style="position:absolute; left:clamp(20px,3vw,44px); right:clamp(20px,3vw,44px); bottom:clamp(84px,9vh,112px); display:grid; gap:10px; opacity: {{ fxOp }}; transform: translateY({{ fxTy }}); transition: {{ fxTr }};">
             <div style="font-size:12px; letter-spacing:0.22em; text-transform:uppercase; color:#C9A57B;">{{ fx.dayLabel }} · {{ fx.dayName }}</div>
-            <div style="font-size:clamp(76px, 10.5vw, 156px); font-weight:200; letter-spacing:-0.045em; line-height:.88; font-variant-numeric:tabular-nums;">{{ fx.time }}</div>
-            <div style="font-size:clamp(24px, 2.6vw, 40px); font-weight:300; letter-spacing:-0.015em; line-height:1.1;">{{ fx.label }}</div>
+            <div style="font-size:clamp(64px, min(8.4vw, 13vh), 140px); font-weight:200; letter-spacing:-0.045em; line-height:.88; font-variant-numeric:tabular-nums;">{{ fx.time }}</div>
+            <div style="font-size:clamp(22px, 2.3vw, 36px); font-weight:300; letter-spacing:-0.015em; line-height:1.1;">{{ fx.label }}</div>
           </div>
-          <div style="position:absolute; left:clamp(20px,3vw,48px); right:clamp(20px,3vw,48px); bottom:clamp(22px,2.6vw,36px);">
+          <div style="position:absolute; left:clamp(20px,3vw,44px); right:clamp(20px,3vw,44px); bottom:clamp(20px,2.4vw,32px);">
             <div style="position:relative; height:26px;">
               <div style="position:absolute; left:0; right:0; top:11px; height:4px; display:grid; grid-template-columns:repeat(3, 1fr); gap:6px;">
                 <span style="background: linear-gradient(90deg, rgba(237,232,223,0.12) 0%, rgba(237,232,223,0.12) 24%, rgba(201,165,123,0.6) 31%, rgba(237,232,223,0.34) 50%, rgba(201,165,123,0.5) 76%, rgba(237,232,223,0.12) 90%, rgba(237,232,223,0.12) 100%);"></span>
@@ -315,42 +409,42 @@
             </div>
           </div>
         </div>
-        <div style="display:grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap:2px; background:rgba(237,232,223,0.1);">
-          <sc-for list="{{ days }}" as="d" hint-placeholder-count="3">
-            <div style="display: {{ d.colDisplay }}; background: {{ d.colBg }}; padding:clamp(24px,2.6vw,36px) clamp(20px,2.4vw,32px); gap:18px; align-content:start; transition: background 1.2s ease;">
-              <div style="display:flex; justify-content:space-between; align-items:baseline; border-bottom:1px solid rgba(237,232,223,0.16); padding-bottom:14px;">
-                <span style="font-size:13px; letter-spacing:0.14em; opacity:.7;">{{ d.label }}</span>
-                <span style="font-size:clamp(22px,2vw,30px); font-weight:300; letter-spacing:0.04em; color: {{ d.nameFg }}; transition: color .6s ease;">{{ d.name }}</span>
-              </div>
-              <ol style="margin:0; padding:0; list-style:none; display:grid; gap:2px;">
-                <sc-for list="{{ d.steps }}" as="s" hint-placeholder-count="7">
-                  <li style="opacity: {{ s.op }}; transform: translateX({{ s.tx }}); transition: opacity .6s ease, transform .6s cubic-bezier(.16,1,.3,1);">
-                    <button onClick="{{ s.go }}" style="all:unset; cursor:pointer; box-sizing:border-box; width:100%; display:grid; grid-template-columns:52px 14px 1fr; align-items:center; gap:12px; padding:9px 0; font-size:16px; font-weight:300;">
-                      <span style="font-size:13px; font-variant-numeric:tabular-nums; color: {{ s.timeFg }}; transition: color .5s ease;">{{ s.time }}</span>
-                      <span style="width:8px; height:8px; border-radius:50%; justify-self:center; background: {{ s.dot }}; box-shadow: {{ s.glow }}; transition: background .5s ease, box-shadow .5s ease;"></span>
-                      <span>{{ s.label }}</span>
-                    </button>
-                  </li>
-                </sc-for>
-              </ol>
+        <div style="flex: 1 1 300px; min-width:0; display:flex; flex-direction:column; justify-content:space-between; gap:18px; padding:clamp(20px,2.2vw,30px); background: {{ h72Panel }}; transition: background 1.2s ease;">
+          <div style="display:grid; gap:12px;">
+            <div style="display:flex; justify-content:space-between; align-items:baseline; border-bottom:1px solid rgba(237,232,223,0.16); padding-bottom:12px;">
+              <span style="font-size:13px; letter-spacing:0.14em; opacity:.7;">{{ h72Col.label }}</span>
+              <span style="font-size:clamp(20px,1.8vw,28px); font-weight:300; letter-spacing:0.04em;">{{ h72Col.name }}</span>
             </div>
-          </sc-for>
-        </div>
-      </div>
-      <div data-reveal="1" style="display:grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap:32px; align-items:center; border-top:1px solid rgba(237,232,223,0.16); padding-top:clamp(28px,3vw,44px);">
-        <div style="font-size:clamp(24px,2.4vw,36px); font-weight:300; letter-spacing:-0.02em; line-height:1.15; text-wrap:balance;">Вы уезжаете не с фотографиями. Вы уезжаете с планом.</div>
-        <div style="display:grid; gap:10px; font-size:16px; line-height:1.55; opacity:.82; max-width:52ch;">
-          <div style="font-size:12px; letter-spacing:0.2em; text-transform:uppercase; color:#C9A57B;">BIOSOMA Reset Plan</div>
-          <p style="margin:0;">Что делать следующие 14 дней дома: сон, движение, питание, тепло и холод — в том же ритме, который вы прожили здесь.</p>
+            <ol style="margin:0; padding:0; list-style:none; display:grid;">
+              <sc-for list="{{ h72Col.steps }}" as="s" hint-placeholder-count="7">
+                <li style="opacity: {{ s.op }}; transform: translateX({{ s.tx }}); transition: opacity .6s ease, transform .6s cubic-bezier(.16,1,.3,1);">
+                  <button onClick="{{ s.go }}" style="all:unset; cursor:pointer; box-sizing:border-box; width:100%; display:grid; grid-template-columns:48px 14px 1fr; align-items:center; gap:12px; padding:6px 0; font-size:15px; font-weight:300;">
+                    <span style="font-size:13px; font-variant-numeric:tabular-nums; color: {{ s.timeFg }}; transition: color .5s ease;">{{ s.time }}</span>
+                    <span style="width:8px; height:8px; border-radius:50%; justify-self:center; background: {{ s.dot }}; box-shadow: {{ s.glow }}; transition: background .5s ease, box-shadow .5s ease;"></span>
+                    <span>{{ s.label }}</span>
+                  </button>
+                </li>
+              </sc-for>
+            </ol>
+          </div>
+          <div style="display:grid; gap:8px; border-top:1px solid rgba(237,232,223,0.16); padding-top:16px;">
+            <div style="font-size:12px; letter-spacing:0.2em; text-transform:uppercase; color:#C9A57B;">BIOSOMA Reset Plan</div>
+            <div style="font-size:clamp(17px,1.4vw,21px); font-weight:300; line-height:1.3; letter-spacing:-0.01em; text-wrap:balance;">Вы уезжаете не с фотографиями. Вы уезжаете с планом на 14 дней дома.</div>
+          </div>
         </div>
       </div>
     </div>
   </section>
 
   <!-- SPACES -->
-  <section id="spaces" data-screen-label="Пространства" style="padding: clamp(80px,10vw,150px) clamp(20px,4vw,56px);">
-    <div style="max-width:1480px; margin:0 auto; display:grid; gap:clamp(36px,4vw,60px);">
-      <h2 data-reveal="1" style="margin:0; font-size:clamp(32px,4vw,60px); line-height:1.05; font-weight:300; letter-spacing:-0.025em; text-wrap:balance;">Пять стихий в одном здании</h2>
+  <section id="spaces" data-screen-label="Пространства" style="position:relative; min-height:100vh; display:flex; flex-direction:column; justify-content:center; padding: clamp(84px,11vh,110px) clamp(20px,4vw,56px) clamp(24px,4vh,48px);">
+    <sc-if value="{{ artOn }}" hint-placeholder-val="{{ true }}">
+      <div aria-hidden="true" style="position:absolute; left:0; right:0; top:-140px; bottom:-140px; z-index:1; overflow:hidden; pointer-events:none; mix-blend-mode:multiply; opacity: {{ artOpL }}; -webkit-mask-image: linear-gradient(180deg, transparent 0, #000 240px, #000 calc(100% - 240px), transparent 100%); mask-image: linear-gradient(180deg, transparent 0, #000 240px, #000 calc(100% - 240px), transparent 100%);">
+        <img loading="lazy" decoding="async" src="img/biosoma/art-spaces.jpg" alt="" style="position:absolute; inset:0; width:100%; height:100%; object-fit:cover; object-position:center;">
+      </div>
+    </sc-if>
+    <div style="position:relative; z-index:2; width:100%; max-width:1480px; margin:0 auto; display:grid; gap:clamp(20px,3.6vh,40px);">
+      <h2 data-reveal="1" style="margin:0; font-size:clamp(30px, min(4vw, 6.4vh), 60px); line-height:1.05; font-weight:300; letter-spacing:-0.025em; text-wrap:balance;">Пять стихий в одном здании</h2>
       <div data-reveal="1" style="display:flex; flex-wrap:wrap; gap:clamp(24px,3vw,48px); align-items:stretch;">
         <div style="flex: 1 1 300px; min-width:0;">
           <sc-if value="{{ notPhone }}" hint-placeholder-val="{{ true }}">
@@ -373,9 +467,9 @@
           </sc-if>
         </div>
         <div style="flex: 2 1 560px; display:grid; gap:22px; align-content:start; min-width:0;">
-          <div style="position:relative; aspect-ratio: 16 / 10; overflow:hidden; background:#CFC7B8;">
+          <div style="position:relative; height:clamp(260px, calc(100vh - 340px), 560px); overflow:hidden; background:#CFC7B8;">
             <sc-for list="{{ spaces }}" as="s" hint-placeholder-count="6">
-              <img src="{{ s.img }}" alt="{{ s.name }}" style="position:absolute; inset:0; width:100%; height:100%; object-fit:cover; opacity: {{ s.imgOp }}; transform: scale({{ s.imgScale }}); transition: opacity .9s ease, transform 1.6s cubic-bezier(.16,1,.3,1);">
+              <img loading="lazy" decoding="async" src="{{ s.img }}" alt="{{ s.name }}" style="position:absolute; inset:0; width:100%; height:100%; object-fit:cover; opacity: {{ s.imgOp }}; transform: scale({{ s.imgScale }}); transition: opacity .9s ease, transform 1.6s cubic-bezier(.16,1,.3,1);">
             </sc-for>
           </div>
           <div style="display:grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap:24px; align-items:start;">
@@ -398,23 +492,24 @@
   </section>
 
   <!-- KITCHEN -->
-  <section id="kitchen" data-screen-label="Кухня" style="position:relative; padding: 0 0 clamp(80px,10vw,150px);">
-    <div data-reveal="1" style="position:relative; height:clamp(320px, 56vh, 640px); overflow:hidden;">
-      <img src="img/biosoma/kitchen.jpg" alt="BIOSOMA KITCHEN — открытая кухня с живым огнём" style="position:absolute; inset:0; width:100%; height:100%; object-fit:cover; object-position:center 55%;">
-      <div style="position:absolute; inset:0; background: linear-gradient(180deg, rgba(34,35,31,0.05), rgba(34,35,31,0.55));"></div>
-      <div style="position:absolute; left:0; right:0; bottom:0; max-width:1480px; margin:0 auto; padding:0 clamp(20px,4vw,56px) clamp(28px,4vw,56px); color:#F1EDE5; display:flex; flex-wrap:wrap; justify-content:space-between; align-items:end; gap:16px;">
-        <h2 style="margin:0; font-size:clamp(34px,4.6vw,72px); line-height:1; font-weight:300; letter-spacing:-0.025em;">BIOSOMA Kitchen</h2>
-        <div style="font-size:14px; letter-spacing:0.16em; text-transform:uppercase; opacity:.85;">Не диета. Питание для восстановления</div>
-      </div>
-    </div>
+  <section id="kitchen" data-screen-label="Кухня" style="position:relative; padding: 0 0 clamp(56px,10vw,150px);">
     <sc-if value="{{ artOn }}" hint-placeholder-val="{{ true }}">
-      <div aria-hidden="true" style="position:absolute; left:0; right:0; top:clamp(320px, 56vh, 640px); bottom:0; overflow:hidden; pointer-events:none;">
+      <div aria-hidden="true" style="position:absolute; left:0; right:0; top:-140px; bottom:-140px; z-index:1; overflow:hidden; pointer-events:none; mix-blend-mode:multiply; opacity: {{ artOpL }}; -webkit-mask-image: linear-gradient(180deg, transparent 0, #000 240px, #000 calc(100% - 240px), transparent 100%); mask-image: linear-gradient(180deg, transparent 0, #000 240px, #000 calc(100% - 240px), transparent 100%);">
         <sc-for list="{{ modes }}" as="m" hint-placeholder-count="3">
-          <img src="{{ m.bgImg }}" alt="" style="position:absolute; inset:0; width:100%; height:100%; object-fit:cover; mix-blend-mode:multiply; opacity: {{ m.bgOp }}; transform: scale({{ m.bgScale }}); transition: opacity 1.2s ease, transform 2.4s cubic-bezier(.16,1,.3,1);">
+          <img loading="lazy" decoding="async" src="{{ m.bgImg }}" alt="" style="position:absolute; inset:0; width:100%; height:100%; object-fit:cover; opacity: {{ m.bgOn }}; transform: scale({{ m.bgScale }}); transition: opacity 1.2s ease, transform 2.4s cubic-bezier(.16,1,.3,1);">
         </sc-for>
       </div>
     </sc-if>
-    <div style="position:relative; max-width:1480px; margin:0 auto; padding: clamp(40px,5vw,72px) clamp(20px,4vw,56px) 0; display:grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap:clamp(32px,4vw,64px); align-items:start;">
+    <div style="position:relative; z-index:2; max-width:calc(1480px + 2 * clamp(20px, 4vw, 56px)); margin:0 auto; padding:0 clamp(20px,4vw,56px);"><div data-reveal="1" style="position:relative; height:clamp(320px, 56vh, 640px); overflow:hidden;">
+      <img loading="lazy" decoding="async" src="img/biosoma/kitchen.jpg" alt="BIOSOMA KITCHEN — открытая кухня с живым огнём" style="position:absolute; inset:0; width:100%; height:100%; object-fit:cover; object-position:center 55%;">
+      <div style="position:absolute; inset:0; background: linear-gradient(180deg, rgba(34,35,31,0.05), rgba(34,35,31,0.55));"></div>
+      <div style="position:absolute; left:0; right:0; bottom:0; padding:0 clamp(20px,3vw,48px) clamp(24px,3vw,44px); color:#F1EDE5; display:flex; flex-wrap:wrap; justify-content:space-between; align-items:end; gap:16px;">
+        <h2 style="margin:0; font-size:clamp(34px,4.6vw,72px); line-height:1; font-weight:300; letter-spacing:-0.025em;">BIOSOMA Kitchen</h2>
+        <div style="font-size:14px; letter-spacing:0.16em; text-transform:uppercase; opacity:.85;">Не диета. Питание для восстановления</div>
+      </div>
+    </div></div>
+    
+    <div style="position:relative; z-index:2; max-width:calc(1480px + 2 * clamp(20px, 4vw, 56px)); margin:0 auto; padding: clamp(40px,5vw,72px) clamp(20px,4vw,56px) 0; display:grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap:clamp(32px,4vw,64px); align-items:start;">
       <div data-reveal="1" style="display:grid; gap:24px;">
         <p style="margin:0; font-size:clamp(20px,1.8vw,26px); line-height:1.35; font-weight:300; letter-spacing:-0.01em; max-width:30ch;">Большая открытая кухня: вы видите продукты и то, как их готовят. Дерево, камень, живые растения и открытый огонь.</p>
         <p style="margin:0; font-size:16px; line-height:1.55; color:#4E4A43; max-width:54ch;">Меню BIOSOMA FOOD LAB строится вокруг противовоспалительных продуктов, достаточного белка, клетчатки, ферментов, сезонных овощей, ягод и зелени — без ультрапереработанных продуктов и с контролем сахара.</p>
@@ -428,7 +523,7 @@
       <div data-reveal="1" style="display:grid; grid-template-columns: {{ kCardCols }}; gap:24px; align-items:center; background:rgba(232,227,218,0.72); backdrop-filter:blur(3px); -webkit-backdrop-filter:blur(3px); border:1px solid rgba(34,35,31,0.14); padding:clamp(18px,2vw,28px);">
         <div style="position:relative; aspect-ratio:1; overflow:hidden; background:#CFC7B8;">
           <sc-for list="{{ modes }}" as="m" hint-placeholder-count="3">
-            <img src="{{ m.img }}" alt="{{ m.alt }}" style="position:absolute; inset:0; width:100%; height:100%; object-fit:cover; opacity: {{ m.imgOp }}; transform: scale({{ m.imgScale }}) rotate({{ m.imgRot }}); transition: opacity .7s ease, transform 1.3s cubic-bezier(.16,1,.3,1);">
+            <img loading="lazy" decoding="async" src="{{ m.img }}" alt="{{ m.alt }}" style="position:absolute; inset:0; width:100%; height:100%; object-fit:cover; opacity: {{ m.imgOp }}; transform: scale({{ m.imgScale }}) rotate({{ m.imgRot }}); transition: opacity .7s ease, transform 1.3s cubic-bezier(.16,1,.3,1);">
           </sc-for>
         </div>
         <div style="display:grid; gap:14px;">
@@ -450,13 +545,14 @@
   </section>
 
   <!-- DAY RHYTHM -->
-  <section data-screen-label="Ритм дня" style="position:relative; padding: clamp(40px,5vw,80px) clamp(20px,4vw,56px) clamp(80px,10vw,150px); background:#DFD8CC;">
+  <section data-screen-label="Ритм дня" style="position:relative; padding: clamp(40px,5vw,80px) clamp(20px,4vw,56px) clamp(56px,10vw,150px); background:#DFD8CC;">
     <sc-if value="{{ artOn }}" hint-placeholder-val="{{ true }}">
-      <div aria-hidden="true" style="position:absolute; inset:0; overflow:hidden; pointer-events:none;">
-        <img src="img/biosoma/art-sun.jpg" alt="" style="position:absolute; inset:0; width:100%; height:100%; object-fit:cover; object-position:center top; mix-blend-mode:multiply; opacity: {{ artOpL }};">
+      <div aria-hidden="true" style="position:absolute; left:0; right:0; top:-140px; bottom:-140px; z-index:1; overflow:hidden; pointer-events:none; mix-blend-mode:multiply; opacity: {{ artOpL }}; -webkit-mask-image: linear-gradient(180deg, transparent 0, #000 240px, #000 calc(100% - 240px), transparent 100%); mask-image: linear-gradient(180deg, transparent 0, #000 240px, #000 calc(100% - 240px), transparent 100%);">
+        <img loading="lazy" decoding="async" src="img/biosoma/art-sun.jpg" alt="" style="position:absolute; inset:0; width:100%; height:100%; object-fit:cover; object-position:center top;">
       </div>
     </sc-if>
-    <div style="position:relative; max-width:1480px; margin:0 auto; display:grid; gap:clamp(36px,4vw,60px);">
+    
+    <div style="position:relative; z-index:2; max-width:1480px; margin:0 auto; display:grid; gap:clamp(36px,4vw,60px);">
       <div data-reveal="1" style="display:grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap:24px; align-items:end;">
         <h2 style="margin:0; font-size:clamp(32px,4vw,60px); line-height:1.05; font-weight:300; letter-spacing:-0.025em;">Ритм дня</h2>
         <p style="margin:0; font-size:17px; line-height:1.55; color:#4E4A43; max-width:50ch; justify-self:end;">Никаких обязательных телефонов. Утро начинается с воды и дыхания, вечер заканчивается digital sunset.</p>
@@ -472,7 +568,7 @@
           </sc-for>
         </div>
         <div style="position:relative; min-height:420px; overflow:hidden; background:#CFC7B8;">
-          <img src="img/biosoma/detox-box.jpg" alt="Digital Detox Box" style="position:absolute; inset:0; width:100%; height:100%; object-fit:cover;">
+          <img loading="lazy" decoding="async" src="img/biosoma/detox-box.jpg" alt="Digital Detox Box" style="position:absolute; inset:0; width:100%; height:100%; object-fit:cover;">
           <div style="position:absolute; inset:0; background: linear-gradient(180deg, rgba(34,35,31,0) 40%, rgba(34,35,31,0.7) 100%);"></div>
           <div style="position:absolute; left:0; right:0; bottom:0; padding:24px; color:#F1EDE5; display:grid; gap:8px;">
             <div style="font-size:12px; letter-spacing:0.2em; text-transform:uppercase; opacity:.8;">Digital Detox Box</div>
@@ -493,13 +589,14 @@
   </section>
 
   <!-- SLEEP -->
-  <section id="sleep" data-screen-label="Сон" style="position:relative; padding: clamp(80px,10vw,150px) clamp(20px,4vw,56px);">
+  <section id="sleep" data-screen-label="Сон" style="position:relative; min-height:100vh; display:flex; flex-direction:column; justify-content:center; padding: clamp(84px,11vh,110px) clamp(20px,4vw,56px) clamp(24px,4vh,48px);">
     <sc-if value="{{ artOn }}" hint-placeholder-val="{{ true }}">
-      <div aria-hidden="true" style="position:absolute; inset:0; overflow:hidden; pointer-events:none;">
-        <img src="img/biosoma/art-moon.jpg" alt="" style="position:absolute; inset:0; width:100%; height:100%; object-fit:cover; object-position:left center; mix-blend-mode:multiply; opacity: {{ artOpL }};">
+      <div aria-hidden="true" style="position:absolute; left:0; right:0; top:-140px; bottom:-140px; z-index:1; overflow:hidden; pointer-events:none; mix-blend-mode:multiply; opacity: {{ artOpL }}; -webkit-mask-image: linear-gradient(180deg, transparent 0, #000 240px, #000 calc(100% - 240px), transparent 100%); mask-image: linear-gradient(180deg, transparent 0, #000 240px, #000 calc(100% - 240px), transparent 100%);">
+        <img loading="lazy" decoding="async" src="img/biosoma/art-moon.jpg" alt="" style="position:absolute; inset:0; width:100%; height:100%; object-fit:cover; object-position:left center;">
       </div>
     </sc-if>
-    <div style="position:relative; max-width:1480px; margin:0 auto; display:grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap:clamp(32px,4vw,64px); align-items:center;">
+    
+    <div style="position:relative; z-index:2; width:100%; max-width:1480px; margin:0 auto; display:grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap:clamp(32px,4vw,64px); align-items:center;">
       <div data-reveal="1" style="display:grid; gap:28px; order:1;">
         <div>
           <div style="font-size:12px; letter-spacing:0.22em; text-transform:uppercase; color:#A07C55; margin-bottom:18px;">Sleep Lab</div>
@@ -515,32 +612,33 @@
           </sc-for>
         </div>
       </div>
-      <div data-reveal="1" style="position:relative; aspect-ratio: 4 / 5; overflow:hidden; background:#CFC7B8; order:2;">
-        <img src="img/biosoma/sleep-room.jpg" alt="SLEEP ROOM — номер, ориентированный на сон" style="position:absolute; inset:0; width:100%; height:100%; object-fit:cover; transition: transform 1.6s cubic-bezier(.16,1,.3,1);" style-hover="transform:scale(1.03)">
+      <div data-reveal="1" style="position:relative; height:clamp(320px, calc(100vh - 190px), 680px); overflow:hidden; background:#CFC7B8; order:2;">
+        <img loading="lazy" decoding="async" src="img/biosoma/sleep-room.jpg" alt="SLEEP ROOM — номер, ориентированный на сон" style="position:absolute; inset:0; width:100%; height:100%; object-fit:cover; transition: transform 1.6s cubic-bezier(.16,1,.3,1);" style-hover="transform:scale(1.03)">
         <div style="position:absolute; left:20px; bottom:20px; padding:10px 14px; background:rgba(34,35,31,0.55); backdrop-filter:blur(8px); color:#F1EDE5; font-size:12px; letter-spacing:0.16em; text-transform:uppercase;">Sleep Room · сценарий вечернего света</div>
       </div>
     </div>
   </section>
 
   <!-- ROOMS -->
-  <section id="rooms" data-screen-label="Номера" style="position:relative; padding: 0 0 clamp(80px,10vw,150px);">
+  <section id="rooms" data-screen-label="Номера" style="position:relative; padding: 0 0 clamp(56px,10vw,150px);">
     <sc-if value="{{ artOn }}" hint-placeholder-val="{{ true }}">
-      <div aria-hidden="true" style="position:absolute; inset:0; overflow:hidden; pointer-events:none;">
-        <img src="img/biosoma/art-room.jpg" alt="" style="position:absolute; inset:0; width:100%; height:100%; object-fit:cover; object-position:center bottom; mix-blend-mode:multiply; opacity: {{ artOpL }};">
+      <div aria-hidden="true" style="position:absolute; left:0; right:0; top:-140px; bottom:-140px; z-index:1; overflow:hidden; pointer-events:none; mix-blend-mode:multiply; opacity: {{ artOpL }}; -webkit-mask-image: linear-gradient(180deg, transparent 0, #000 240px, #000 calc(100% - 240px), transparent 100%); mask-image: linear-gradient(180deg, transparent 0, #000 240px, #000 calc(100% - 240px), transparent 100%);">
+        <img loading="lazy" decoding="async" src="img/biosoma/art-room.jpg" alt="" style="position:absolute; inset:0; width:100%; height:100%; object-fit:cover; object-position:center bottom;">
       </div>
     </sc-if>
-    <div style="position:relative; max-width:1480px; margin:0 auto; padding:0 clamp(20px,4vw,56px) clamp(28px,3vw,44px); display:flex; flex-wrap:wrap; justify-content:space-between; align-items:end; gap:16px;">
+    
+    <div style="position:relative; z-index:2; max-width:calc(1480px + 2 * clamp(20px, 4vw, 56px)); margin:0 auto; padding:0 clamp(20px,4vw,56px) clamp(28px,3vw,44px); display:flex; flex-wrap:wrap; justify-content:space-between; align-items:end; gap:16px;">
       <h2 data-reveal="1" style="margin:0; font-size:clamp(32px,4vw,60px); line-height:1.05; font-weight:300; letter-spacing:-0.025em;">Номера</h2>
       <div style="display:flex; gap:8px;">
         <button onClick="{{ roomsPrev }}" aria-label="Назад" style="width:48px; height:48px; border:1px solid rgba(34,35,31,0.3); background:transparent; color:#22231F; font-size:18px; cursor:pointer; transition: background .3s ease, color .3s ease;" style-hover="background:#22231F; color:#E8E3DA">←</button>
         <button onClick="{{ roomsNext }}" aria-label="Вперёд" style="width:48px; height:48px; border:1px solid rgba(34,35,31,0.3); background:transparent; color:#22231F; font-size:18px; cursor:pointer; transition: background .3s ease, color .3s ease;" style-hover="background:#22231F; color:#E8E3DA">→</button>
       </div>
     </div>
-    <div data-rooms="1" style="position:relative; display:grid; grid-auto-flow:column; grid-auto-columns: clamp(280px, 30vw, 460px); gap:16px; overflow-x:auto; scroll-snap-type:x mandatory; padding:0 clamp(20px,4vw,56px) 12px; scrollbar-width:none;">
+    <div data-rooms="1" style="position:relative; z-index:2; display:grid; grid-auto-flow:column; grid-auto-columns: clamp(280px, 30vw, 460px); gap:16px; overflow-x:auto; scroll-snap-type:x mandatory; padding:0 max(clamp(20px,4vw,56px), calc((100% - 1480px) / 2)) 12px; scroll-padding-left:max(clamp(20px,4vw,56px), calc((100% - 1480px) / 2)); scrollbar-width:none;">
       <sc-for list="{{ rooms }}" as="r" hint-placeholder-count="5">
         <div style="scroll-snap-align:start; display:grid; gap:14px; align-content:start;">
           <div style="position:relative; aspect-ratio: 4 / 3; overflow:hidden; background:#CFC7B8;">
-            <img src="{{ r.img }}" alt="{{ r.name }}" style="position:absolute; inset:0; width:100%; height:100%; object-fit:cover; transition: transform 1.4s cubic-bezier(.16,1,.3,1);" style-hover="transform:scale(1.04)">
+            <img loading="lazy" decoding="async" src="{{ r.img }}" alt="{{ r.name }}" style="position:absolute; inset:0; width:100%; height:100%; object-fit:cover; transition: transform 1.4s cubic-bezier(.16,1,.3,1);" style-hover="transform:scale(1.04)">
           </div>
           <div style="display:flex; justify-content:space-between; align-items:baseline; gap:12px;">
             <div style="font-size:clamp(18px,1.5vw,22px); font-weight:400; letter-spacing:0.02em;">{{ r.name }}</div>
@@ -552,14 +650,88 @@
     </div>
   </section>
 
-  <!-- BOOKING -->
-  <section id="book" data-screen-label="Бронирование" style="position:relative; padding: clamp(80px,10vw,150px) clamp(20px,4vw,56px); background:#22231F; color:#EDE8DF;">
+  
+    <!-- TEAM -->
+  <section id="team" data-screen-label="Команда" style="position:relative; padding: clamp(56px,10vw,150px) clamp(20px,4vw,56px); background:#DFD8CC;">
     <sc-if value="{{ artOn }}" hint-placeholder-val="{{ true }}">
-      <div aria-hidden="true" style="position:absolute; inset:0; overflow:hidden; pointer-events:none;">
-        <img src="img/biosoma/art-ridge.jpg" alt="" style="position:absolute; inset:0; width:100%; height:100%; object-fit:cover; object-position:center bottom; mix-blend-mode:screen; opacity: {{ artOpD }};">
+      <div aria-hidden="true" style="position:absolute; left:0; right:0; top:-140px; bottom:-140px; z-index:1; overflow:hidden; pointer-events:none; mix-blend-mode:multiply; opacity: {{ artOpL }}; -webkit-mask-image: linear-gradient(180deg, transparent 0, #000 240px, #000 calc(100% - 240px), transparent 100%); mask-image: linear-gradient(180deg, transparent 0, #000 240px, #000 calc(100% - 240px), transparent 100%);">
+        <img loading="lazy" decoding="async" src="img/biosoma/art-team.jpg" alt="" style="position:absolute; inset:0; width:100%; height:100%; object-fit:cover; object-position:center;">
       </div>
     </sc-if>
-    <div style="position:relative; max-width:1480px; margin:0 auto; display:grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap:clamp(40px,5vw,80px); align-items:start;">
+    <div style="position:relative; z-index:2; max-width:1480px; margin:0 auto; display:grid; gap:clamp(36px,4vw,60px);">
+      <div data-reveal="1" style="display:flex; flex-wrap:wrap; justify-content:space-between; align-items:flex-end; gap:16px 48px;">
+        <div>
+          <div style="font-size:12px; letter-spacing:0.22em; text-transform:uppercase; color:#A07C55; margin-bottom:16px;">Кто рядом с вами</div>
+          <h2 style="margin:0; font-size:clamp(32px,4vw,60px); line-height:1.05; font-weight:300; letter-spacing:-0.025em; text-wrap:balance;">Команда BIOSOMA</h2>
+        </div>
+        <p style="margin:0; font-size:16px; line-height:1.55; color:#4E4A43; max-width:48ch;">Программу ведут специалисты: врач превентивной медицины, нутрициолог, тренеры и банные мастера. Они знают ваш запрос до заезда и остаются на связи 14 дней после.</p>
+      </div>
+      <div data-reveal="1" style="display:grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 150px), 1fr)); gap:clamp(14px,2vw,28px);">
+        <sc-for list="{{ team }}" as="m" hint-placeholder-count="4">
+          <div style="display:grid; grid-template-columns: minmax(0, 1fr); min-width:0; gap:14px; align-content:start;">
+            <div style="position:relative; width:100%; min-width:0; overflow:hidden; aspect-ratio: 4 / 5; background:#CFC7B8;"><image-slot id="{{ m.slot }}" src="{{ m.photo }}" shape="rect" placeholder="Фото специалиста" style="display:block; width:100%; height:100%;"></image-slot></div>
+            <div style="display:grid; gap:6px;">
+              <div style="font-size:12px; letter-spacing:0.16em; text-transform:uppercase; color:#A07C55;">{{ m.role }}</div>
+              <div style="font-size:20px; font-weight:400; letter-spacing:0.01em;">{{ m.name }}</div>
+              <div style="font-size:14px; line-height:1.5; color:#4E4A43;">{{ m.text }}</div>
+            </div>
+          </div>
+        </sc-for>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ + ROUTE -->
+  <section id="faq" data-screen-label="Вопросы и дорога" style="position:relative; padding: clamp(56px,10vw,150px) clamp(20px,4vw,56px); background:#E8E3DA;">
+    <sc-if value="{{ artOn }}" hint-placeholder-val="{{ true }}">
+      <div aria-hidden="true" style="position:absolute; left:0; right:0; top:-140px; bottom:-140px; z-index:1; overflow:hidden; pointer-events:none; mix-blend-mode:multiply; opacity: {{ artOpL }}; -webkit-mask-image: linear-gradient(180deg, transparent 0, #000 240px, #000 calc(100% - 240px), transparent 100%); mask-image: linear-gradient(180deg, transparent 0, #000 240px, #000 calc(100% - 240px), transparent 100%);">
+        <img loading="lazy" decoding="async" src="img/biosoma/art-faq.jpg" alt="" style="position:absolute; inset:0; width:100%; height:100%; object-fit:cover; object-position:center;">
+      </div>
+    </sc-if>
+    <div style="position:relative; z-index:2; max-width:1480px; margin:0 auto; display:flex; flex-wrap:wrap; gap:clamp(40px,5vw,80px); align-items:flex-start;">
+      <div data-reveal="1" style="flex: 1.3 1 480px; min-width:0; display:grid; gap:28px;">
+        <div><div style="font-size:12px; letter-spacing:0.22em; text-transform:uppercase; color:#A07C55; margin-bottom:16px;">Вопросы</div><h2 style="margin:0; font-size:clamp(32px,4vw,60px); line-height:1.05; font-weight:300; letter-spacing:-0.025em; text-wrap:balance;">Перед поездкой</h2></div>
+        <div style="border-top:1px solid rgba(34,35,31,0.16);">
+          <sc-for list="{{ faq }}" as="q" hint-placeholder-count="6">
+            <div style="border-bottom:1px solid rgba(34,35,31,0.16);">
+              <button onClick="{{ q.toggle }}" aria-expanded="{{ q.open }}" style="all:unset; cursor:pointer; box-sizing:border-box; width:100%; display:grid; grid-template-columns:1fr 30px; align-items:center; gap:16px; padding:20px 0; font-size:clamp(17px,1.4vw,20px); line-height:1.35;">
+                <span>{{ q.q }}</span>
+                <span style="position:relative; width:30px; height:30px; border:1px solid {{ q.iconBorder }}; border-radius:50%; background: {{ q.iconBg }}; transform: rotate({{ q.rot }}); transition: transform .45s cubic-bezier(.16,1,.3,1), background .3s ease, border-color .3s ease;"><span style="position:absolute; left:8px; right:8px; top:14px; height:1px; background: {{ q.iconFg }};"></span><span style="position:absolute; top:8px; bottom:8px; left:14px; width:1px; background: {{ q.iconFg }};"></span></span>
+              </button>
+              <div style="display:grid; grid-template-rows: {{ q.rows }}; transition: grid-template-rows .5s cubic-bezier(.16,1,.3,1);">
+                <div style="overflow:hidden;"><p style="margin:0; padding:0 46px 22px 0; font-size:15px; line-height:1.6; color:#4E4A43;">{{ q.a }}</p></div>
+              </div>
+            </div>
+          </sc-for>
+        </div>
+      </div>
+      <div data-reveal="1" style="flex: 1 1 360px; min-width:0; display:grid; gap:24px; background:#22231F; color:#EDE8DF; padding:clamp(28px,3vw,44px);">
+        <div><div style="font-size:12px; letter-spacing:0.22em; text-transform:uppercase; color:#C9A57B; margin-bottom:16px;">Как добраться</div><div style="font-size:clamp(26px,2.4vw,36px); font-weight:300; letter-spacing:-0.02em; line-height:1.1;">Красная Поляна, Сочи</div><div style="font-size:14px; opacity:.7; margin-top:10px;">[Точный адрес курорта]</div></div>
+        <div style="display:grid; border-top:1px solid rgba(237,232,223,0.16);">
+          <sc-for list="{{ routes }}" as="rt" hint-placeholder-count="3">
+            <div style="display:grid; grid-template-columns:110px 1fr; gap:16px; padding:16px 0; border-bottom:1px solid rgba(237,232,223,0.16);">
+              <span style="font-size:12px; letter-spacing:0.14em; text-transform:uppercase; color:#C9A57B; padding-top:3px;">{{ rt.k }}</span>
+              <span style="font-size:15px; line-height:1.5;">{{ rt.v }}</span>
+            </div>
+          </sc-for>
+        </div>
+        <div style="display:flex; flex-wrap:wrap; gap:10px;">
+          <a href="https://yandex.ru/maps/?text=%D0%9A%D1%80%D0%B0%D1%81%D0%BD%D0%B0%D1%8F%20%D0%9F%D0%BE%D0%BB%D1%8F%D0%BD%D0%B0" target="_blank" rel="noopener" style="display:inline-flex; align-items:center; height:48px; padding:0 20px; border:1px solid rgba(237,232,223,0.4); color:#EDE8DF; font-size:14px; white-space:nowrap; transition: border-color .3s ease;" style-hover="border-color:#EDE8DF">Открыть на карте</a>
+          <a href="https://t.me/" target="_blank" rel="noopener" style="display:inline-flex; align-items:center; height:48px; padding:0 20px; background:#C9A57B; color:#22231F; font-size:14px; font-weight:500; white-space:nowrap; transition: background .3s ease;" style-hover="background:#D9B88E">Заказать трансфер</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- BOOKING -->
+  <section id="book" data-screen-label="Бронирование" style="position:relative; padding: clamp(56px,10vw,150px) clamp(20px,4vw,56px); background:#22231F; color:#EDE8DF;">
+    <sc-if value="{{ artOn }}" hint-placeholder-val="{{ true }}">
+      <div aria-hidden="true" style="position:absolute; left:0; right:0; top:-140px; bottom:-220px; z-index:1; overflow:hidden; pointer-events:none; mix-blend-mode:screen; opacity: {{ artOpD }}; -webkit-mask-image: linear-gradient(180deg, transparent 0, #000 240px, #000 calc(100% - 240px), transparent 100%); mask-image: linear-gradient(180deg, transparent 0, #000 240px, #000 calc(100% - 240px), transparent 100%);">
+        <img loading="lazy" decoding="async" src="img/biosoma/art-ridge.jpg" alt="" style="position:absolute; inset:0; width:100%; height:100%; object-fit:cover; object-position:center bottom;">
+      </div>
+    </sc-if>
+    
+    <div style="position:relative; z-index:2; max-width:1480px; margin:0 auto; display:grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap:clamp(40px,5vw,80px); align-items:start;">
       <div data-reveal="1" style="display:grid; gap:28px;">
         <h2 style="margin:0; font-size:clamp(34px,4.4vw,66px); line-height:1.02; font-weight:300; letter-spacing:-0.025em; text-wrap:balance;">Горы лечат. BIOSOMA помогает перезагрузиться.</h2>
         <p style="margin:0; font-size:17px; line-height:1.55; opacity:.82; max-width:50ch;">Оставьте запрос — мы подтвердим даты в течение дня и пришлём ссылку на оплату.</p>
@@ -571,10 +743,19 @@
             </div>
           </sc-for>
         </div>
+        <div style="display:grid; gap:12px;">
+          <div style="font-size:12px; letter-spacing:0.18em; text-transform:uppercase; opacity:.6;">Быстрее всего — в мессенджере</div>
+          <div style="display:flex; flex-wrap:wrap; gap:10px;">
+            <a href="https://t.me/" target="_blank" rel="noopener" style="display:inline-flex; align-items:center; height:46px; padding:0 18px; border:1px solid rgba(237,232,223,0.35); color:#EDE8DF; font-size:14px; white-space:nowrap; transition: border-color .3s ease;" style-hover="border-color:#EDE8DF">Telegram</a>
+            <a href="https://wa.me/70000000000" target="_blank" rel="noopener" style="display:inline-flex; align-items:center; height:46px; padding:0 18px; border:1px solid rgba(237,232,223,0.35); color:#EDE8DF; font-size:14px; white-space:nowrap; transition: border-color .3s ease;" style-hover="border-color:#EDE8DF">WhatsApp</a>
+            <a href="tel:+70000000000" style="display:inline-flex; align-items:center; height:46px; padding:0 18px; border:1px solid rgba(237,232,223,0.35); color:#EDE8DF; font-size:14px; white-space:nowrap; transition: border-color .3s ease;" style-hover="border-color:#EDE8DF">+7 (000) 000-00-00</a>
+          </div>
+        </div>
       </div>
       <sc-if value="{{ notSent }}" hint-placeholder-val="{{ true }}">
-        <form data-reveal="1" onSubmit="{{ onSubmit }}" style="display:grid; gap:18px; background:#2A2B26; padding:clamp(24px,3vw,40px); border:1px solid rgba(237,232,223,0.1);">
+        <form data-reveal="1" onSubmit="{{ onSubmit }}" style="position:relative; display:grid; gap:18px; background:#2A2B26; padding:clamp(24px,3vw,40px); border:1px solid rgba(237,232,223,0.1);">
           <div style="display:grid; gap:8px; min-width:0;">
+            <input type="text" name="website" tabIndex="-1" autoComplete="off" aria-hidden="true" style="position:absolute; left:-9999px; width:1px; height:1px; opacity:0;">
             <label for="bk-program" style="font-size:12px; letter-spacing:0.16em; text-transform:uppercase; opacity:.75;">Программа</label>
             <select id="bk-program" name="program" value="{{ programId }}" onChange="{{ onProgramSelect }}" style="width:100%; min-width:0; height:52px; padding:0 14px; background:#22231F; color:#EDE8DF; border:1px solid rgba(237,232,223,0.25); font-size:16px; outline:none;" style-focus="border-color:#C9A57B">
               <sc-for list="{{ programOptions }}" as="o" hint-placeholder-count="5">
@@ -585,7 +766,7 @@
           <div style="display:grid; grid-template-columns: repeat(auto-fit, minmax(160px, 1fr)); gap:18px;">
             <div style="display:grid; gap:8px; min-width:0;">
               <label for="bk-date" style="font-size:12px; letter-spacing:0.16em; text-transform:uppercase; opacity:.75;">Дата заезда</label>
-              <input id="bk-date" name="date" type="date" min="{{ today }}" required="{{ true }}" style="width:100%; min-width:0; height:52px; padding:0 14px; background:#22231F; color:#EDE8DF; border:1px solid rgba(237,232,223,0.25); font-size:16px; outline:none; color-scheme:dark;" style-focus="border-color:#C9A57B">
+              <input id="bk-date" name="date" type="date" value="{{ formDate }}" onChange="{{ onDateChange }}" min="{{ today }}" required="{{ true }}" style="width:100%; min-width:0; height:52px; padding:0 14px; background:#22231F; color:#EDE8DF; border:1px solid rgba(237,232,223,0.25); font-size:16px; outline:none; color-scheme:dark;" style-focus="border-color:#C9A57B">
             </div>
             <div style="display:grid; gap:8px; min-width:0;">
               <label for="bk-guests" style="font-size:12px; letter-spacing:0.16em; text-transform:uppercase; opacity:.75;">Гостей</label>
@@ -612,8 +793,9 @@
           </label>
           <div style="display:flex; flex-wrap:wrap; align-items:center; justify-content:space-between; gap:16px; padding-top:6px;">
             <div style="font-size:13px; line-height:1.5; opacity:.7; max-width:36ch;">{{ summary }}</div>
-            <button type="submit" style="height:54px; padding:0 30px; background:#C9A57B; color:#22231F; border:none; font-size:15px; font-weight:500; letter-spacing:0.02em; cursor:pointer; white-space:nowrap; transition: background .3s ease, transform .2s ease;" style-hover="background:#D9B88E" style-active="transform:scale(0.98)">Отправить запрос</button>
+            <button type="submit" disabled="{{ sending }}" style="height:54px; padding:0 30px; background:#C9A57B; color:#22231F; border:none; font-size:15px; font-weight:500; letter-spacing:0.02em; cursor:pointer; white-space:nowrap; transition: background .3s ease, transform .2s ease;" style-hover="background:#D9B88E" style-active="transform:scale(0.98)">{{ submitLabel }}</button>
           </div>
+          <sc-if value="{{ formError }}" hint-placeholder-val="{{ false }}"><div role="alert" style="font-size:14px; line-height:1.5; padding:14px 16px; border:1px solid rgba(201,165,123,0.6); color:#EDE8DF;">Не удалось отправить запрос. Напишите нам в <a href="https://t.me/" target="_blank" rel="noopener" style="color:#C9A57B; text-decoration:underline;">Telegram</a> или позвоните: <a href="tel:+70000000000" style="color:#C9A57B; text-decoration:underline;">+7 (000) 000-00-00</a>.</div></sc-if>
           <div style="font-size:12px; line-height:1.55; opacity:.65;">Отправляя запрос, вы подтверждаете, что ознакомились с <a href="docs.html#offer" target="_blank" style="color:inherit; text-decoration:underline;">публичной офертой</a>, <a href="docs.html#cancel" target="_blank" style="color:inherit; text-decoration:underline;">правилами отмены и возврата</a> и <a href="docs.html#policy" target="_blank" style="color:inherit; text-decoration:underline;">политикой обработки персональных данных</a>.</div>
         </form>
       </sc-if>
@@ -622,6 +804,7 @@
           <div style="font-size:12px; letter-spacing:0.2em; text-transform:uppercase; color:#C9A57B;">Запрос принят</div>
           <div style="font-size:clamp(26px,2.6vw,38px); font-weight:300; letter-spacing:-0.02em; line-height:1.1;">{{ sentTitle }}</div>
           <p style="margin:0; font-size:16px; line-height:1.55; opacity:.82; max-width:46ch;">{{ sentText }}</p>
+          <sc-if value="{{ payOn }}" hint-placeholder-val="{{ false }}"><a href="{{ payHref }}" style="justify-self:start; display:inline-flex; align-items:center; height:52px; padding:0 26px; background:#C9A57B; color:#22231F; font-size:15px; font-weight:500; white-space:nowrap;" style-hover="background:#D9B88E">Внести предоплату 30% онлайн</a></sc-if>
           <button onClick="{{ reset }}" style="justify-self:start; height:48px; padding:0 22px; background:transparent; border:1px solid rgba(237,232,223,0.4); color:#EDE8DF; font-size:14px; cursor:pointer;" style-hover="border-color:#EDE8DF">Новый запрос</button>
         </div>
       </sc-if>
@@ -629,12 +812,13 @@
   </section>
 
   <!-- FOOTER -->
-  <footer style="padding: clamp(40px,5vw,64px) clamp(20px,4vw,56px); background:#1C1D1A; color:#EDE8DF;">
-    <div style="max-width:1480px; margin:0 auto; display:grid; gap:36px;">
+  <footer style="position:relative; padding: clamp(40px,5vw,64px) clamp(20px,4vw,56px); background:#1C1D1A; color:#EDE8DF;">
+    <div style="position:relative; z-index:2; max-width:1480px; margin:0 auto; display:grid; gap:36px;">
       <div style="display:grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap:32px; align-items:start;">
         <div style="display:grid; gap:14px;">
           <div style="display:flex; align-items:center; gap:12px;"><svg viewBox="0 0 600 440" aria-hidden="true" fill="currentColor" style="display:block; height:26px; width:auto; flex:none;"><path d="M245 80.5 L279 43.1 L279 430 L245 430 Z"></path><path d="M169 164.1 L203 126.7 L203 430 L169 430 Z"></path><path d="M93 247.7 L127 210.3 L127 430 L93 430 Z"></path><path d="M17 331.3 L51 293.9 L51 430 L17 430 Z"></path><path d="M321 43.1 L355 80.5 L355 430 L321 430 Z"></path><path d="M397 126.7 L431 164.1 L431 430 L397 430 Z"></path><path d="M473 210.3 L507 247.7 L507 430 L473 430 Z"></path><path d="M549 293.9 L583 331.3 L583 430 L549 430 Z"></path></svg><span style="font-size:17px; font-weight:600; letter-spacing:0.22em;">BIOSOMA</span></div>
           <div style="font-size:13px; opacity:.7; line-height:1.6;">Mountain Retreat &amp; Longevity Resort<br>Красная Поляна, Сочи</div>
+          <div style="font-size:13px; line-height:1.8;"><a href="tel:+70000000000" style="color:#EDE8DF; opacity:.85;">+7 (000) 000-00-00</a><br><a href="mailto:booking@example.ru" style="color:#EDE8DF; opacity:.85;">booking@[домен]</a></div>
         </div>
         <div style="display:grid; gap:8px; font-size:14px;">
           <div style="font-size:12px; letter-spacing:0.18em; text-transform:uppercase; opacity:.55; margin-bottom:6px;">Экосистема</div>
@@ -664,13 +848,13 @@
   </footer>
 </div>
 </x-dc>
-<script type="text/x-dc" data-dc-script data-props="{&quot;heroVariant&quot;:{&quot;editor&quot;:&quot;enum&quot;,&quot;default&quot;:&quot;Открытый бассейн&quot;,&quot;options&quot;:[&quot;Открытый бассейн&quot;,&quot;Терраса&quot;,&quot;Архитектура&quot;],&quot;tsType&quot;:&quot;'Открытый бассейн' | 'Терраса' | 'Архитектура'&quot;,&quot;section&quot;:&quot;Главный экран&quot;},&quot;defaultProgram&quot;:{&quot;editor&quot;:&quot;enum&quot;,&quot;default&quot;:&quot;RESET&quot;,&quot;options&quot;:[&quot;RESET&quot;,&quot;DETOX&quot;,&quot;LONGEVITY&quot;,&quot;DEEP RESET&quot;],&quot;tsType&quot;:&quot;'RESET' | 'DETOX' | 'LONGEVITY' | 'DEEP RESET'&quot;,&quot;section&quot;:&quot;Программы&quot;},&quot;bgArt&quot;:{&quot;editor&quot;:&quot;enum&quot;,&quot;default&quot;:&quot;Еле видно&quot;,&quot;options&quot;:[&quot;Еле видно&quot;,&quot;Заметнее&quot;,&quot;Выкл&quot;],&quot;tsType&quot;:&quot;'Еле видно' | 'Заметнее' | 'Выкл'&quot;,&quot;section&quot;:&quot;Фоновые гравюры&quot;},&quot;reveal&quot;:{&quot;editor&quot;:&quot;boolean&quot;,&quot;default&quot;:true,&quot;tsType&quot;:&quot;boolean&quot;,&quot;section&quot;:&quot;Анимация&quot;}}">
+<script type="text/x-dc" data-dc-script data-props="{&quot;heroVariant&quot;:{&quot;editor&quot;:&quot;enum&quot;,&quot;default&quot;:&quot;Открытый бассейн&quot;,&quot;options&quot;:[&quot;Открытый бассейн&quot;,&quot;Терраса&quot;,&quot;Архитектура&quot;],&quot;tsType&quot;:&quot;'Открытый бассейн' | 'Терраса' | 'Архитектура'&quot;,&quot;section&quot;:&quot;Главный экран&quot;},&quot;defaultProgram&quot;:{&quot;editor&quot;:&quot;enum&quot;,&quot;default&quot;:&quot;RESET&quot;,&quot;options&quot;:[&quot;RESET&quot;,&quot;DETOX&quot;,&quot;LONGEVITY&quot;,&quot;DEEP RESET&quot;],&quot;tsType&quot;:&quot;'RESET' | 'DETOX' | 'LONGEVITY' | 'DEEP RESET'&quot;,&quot;section&quot;:&quot;Программы&quot;},&quot;bgArt&quot;:{&quot;editor&quot;:&quot;enum&quot;,&quot;default&quot;:&quot;Еле видно&quot;,&quot;options&quot;:[&quot;Еле видно&quot;,&quot;Заметнее&quot;,&quot;Выкл&quot;],&quot;tsType&quot;:&quot;'Еле видно' | 'Заметнее' | 'Выкл'&quot;,&quot;section&quot;:&quot;Фоновые гравюры&quot;},&quot;formMode&quot;:{&quot;editor&quot;:&quot;enum&quot;,&quot;default&quot;:&quot;Демо&quot;,&quot;options&quot;:[&quot;Демо&quot;,&quot;Сервер (send.php)&quot;],&quot;tsType&quot;:&quot;'Демо' | 'Сервер (send.php)'&quot;,&quot;section&quot;:&quot;Форма&quot;},&quot;reveal&quot;:{&quot;editor&quot;:&quot;boolean&quot;,&quot;default&quot;:true,&quot;tsType&quot;:&quot;boolean&quot;,&quot;section&quot;:&quot;Анимация&quot;}}">
 class Component extends DCLogic {
-  state = { program: null, space: 'spa', mode: 'reset', tick: 0, scrolled: false, narrow: false, menu: false, sent: false, sentName: '', routeOn: false, h72On: false, heroIn: false, stage: 0, textStage: 0, needle: 30, fade: false, auto: false, progReset: true, phone: false, openProg: null, progsOn: false, stack: false, h72Idx: 0, h72Shown: 0, fxPhase: 'idle', h72Seen: false };
+  state = { program: null, space: 'spa', mode: 'reset', tick: 0, scrolled: false, narrow: false, menu: false, sent: false, sentName: '', routeOn: false, h72On: false, heroIn: false, stage: 0, textStage: 0, needle: 30, fade: false, auto: false, progReset: true, phone: false, openProg: null, progsOn: false, stack: false, h72Idx: 0, h72Shown: 0, fxPhase: 'idle', h72Seen: false, formDate: '', sending: false, formError: false, openFaq: 0, bookOn: false, pilHover: -1, pilOn: false, pilDone: false };
 
   componentDidMount() {
     this._reduce = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
-    this._mq = window.matchMedia('(max-width: 1100px)');
+    this._mq = window.matchMedia('(max-width: 1280px)');
     const onMq = () => this.setState({ narrow: this._mq.matches, menu: false });
     onMq(); this._mq.addEventListener('change', onMq); this._onMq = onMq;
     this._mq2 = window.matchMedia('(max-width: 640px)');
@@ -686,10 +870,13 @@ class Component extends DCLogic {
     this._obs.push(io('[data-hero-sentinel]', ([e]) => this.setState({ scrolled: !e.isIntersecting }), { threshold: 0 }));
     this._obs.push(io('[data-route]', ([e]) => { this._routeVisible = e.isIntersecting; if (e.isIntersecting && !this.state.routeOn) this.setState({ routeOn: true }); this._schedule(); }, { threshold: 0.25 }));
     this._obs.push(io('[data-h72]', ([e]) => this.setState(e.isIntersecting ? { h72On: true, h72Seen: true } : { h72On: false }), { threshold: 0.15 }));
+    this._obs.push(io('#book', ([e]) => this.setState({ bookOn: e.isIntersecting || e.boundingClientRect.top < 0 }), { threshold: 0.02 }));
+    this._noHover = window.matchMedia('(hover: none)').matches;
+    this._obs.push(io('[data-pillars]', ([e]) => { if (e.isIntersecting && !this.state.pilOn) { this.setState({ pilOn: true }); setTimeout(() => this.setState({ pilDone: true }), 2400); } }, { threshold: 0.15 }));
     this._obs.push(io('[data-progs]', ([e]) => { if (e.isIntersecting && !this.state.progsOn) this.setState({ progsOn: true }); }, { threshold: 0.2 }));
     requestAnimationFrame(() => this.setState({ heroIn: true }));
     if (!this._reduce) {
-      this._timer = setInterval(() => { if (this.state.h72On && !this._h72Hover && Date.now() > (this._h72Pause || 0)) this._h72Go((this.state.h72Idx + 1) % 23, false); }, 2600);
+      this._timer = setInterval(() => { if (!document.hidden && this.state.h72On && !this._h72Hover && Date.now() > (this._h72Pause || 0)) this._h72Go((this.state.h72Idx + 1) % 23, false); }, 2600);
       if ((this.props.reveal ?? true)) this._setupReveal(root);
     }
   }
@@ -866,7 +1053,9 @@ class Component extends DCLogic {
       { n: '06', en: 'COLD', ru: 'Холод', text: 'Контраст, ледяная зона, cold exposure под присмотром.', img: 'img/biosoma/lab.jpg' },
       { n: '07', en: 'REST', ru: 'Восстановление', text: 'Массаж, compression recovery, релакс-зона у воды.', img: 'img/biosoma/spa-relax.jpg' },
       { n: '08', en: 'MIND', ru: 'Ментальная перезагрузка', text: 'Медитация, sound healing, цифровой detox.', img: 'img/biosoma/studio-evening.jpg' }
-    ].map((p, i) => ({ ...p, img: p.img || '', bg: p.img ? '#5B5F58' : (i % 3 === 1 ? '#DFD8CC' : '#E8E3DA'), bgHover: p.img ? '#5B5F58' : '#D6CFC1', fg: p.img ? '#F1EDE5' : '#22231F' }));
+    ].map((p, i) => { const on = s.pilOn || this._reduce, hv = s.pilHover === i, any = s.pilHover >= 0, c = i + 1, dl = s.phone ? i * 0.08 : (Math.floor(c / 3) + c % 3) * 0.1 + 0.1, done = s.pilDone || this._reduce; return { ...p, enter: () => { if (!this._noHover && this.state.pilHover !== i) this.setState({ pilHover: i }); }, clip: 'none', delay: done ? '0s' : dl.toFixed(2) + 's', delay2: done ? '0s' : (dl + 0.45).toFixed(2) + 's', scale: !on ? 1.18 : (hv ? 1.07 : 1), filter: any && !hv ? 'saturate(.55)' : 'none', dim: any && !hv ? 1 : 0, op: on ? 1 : 0, ty: !on ? '16px' : (hv ? '-4px' : '0px'), line: hv ? '48px' : '0px', pillBg: hv ? '#C9A57B' : 'rgba(24,24,21,0.45)', pillFg: hv ? '#22231F' : '#F1EDE5', pillBorder: hv ? '#C9A57B' : 'rgba(241,237,229,0.3)' }; });
+    const BARS = ['M17 331.3 L51 293.9 L51 430 L17 430 Z', 'M93 247.7 L127 210.3 L127 430 L93 430 Z', 'M169 164.1 L203 126.7 L203 430 L169 430 Z', 'M245 80.5 L279 43.1 L279 430 L245 430 Z', 'M321 43.1 L355 80.5 L355 430 L321 430 Z', 'M397 126.7 L431 164.1 L431 430 L397 430 Z', 'M473 210.3 L507 247.7 L507 430 L473 430 Z', 'M549 293.9 L583 331.3 L583 430 L549 430 Z'];
+    const bars = BARS.map((d, i) => ({ d, fill: s.pilHover === i ? '#C9A57B' : '#EDE8DF', sy: (s.pilOn || this._reduce) ? 1 : 0.02, delay: (s.pilDone || this._reduce) ? '0s' : (0.35 + i * 0.07).toFixed(2) + 's' }));
 
     const H72 = [
       { label: 'День 1', name: 'STOP', art: 'img/biosoma/h72-stop.jpg', alt: 'Вечер прибытия: тёплый свет в окнах и пар над бассейном', tone: '#1D2023', steps: [['15:00', 'Прибытие'], ['15:30', 'Welcome drink'], ['16:00', 'Digital detox'], ['17:00', 'SPA'], ['19:30', 'Лёгкий ужин'], ['21:00', 'Meditation'], ['22:30', 'Сон']] },
@@ -905,7 +1094,7 @@ class Component extends DCLogic {
     const artMode = this.props.bgArt ?? 'Еле видно';
     const artOp = artMode === 'Заметнее' ? 0.3 : 0.17;
     const mode = MODES.find(m => m.id === s.mode) || MODES[0];
-    const modes = MODES.map(m => { const on = m.id === s.mode; return { ...m, bg: on ? '#22231F' : 'transparent', fg: on ? '#E8E3DA' : '#22231F', select: () => this.setState({ mode: m.id }), pad: s.phone ? '14px 12px' : '12px 20px', fs: s.phone ? '12px' : '13px', img: 'img/biosoma/food-' + m.id + '.jpg', alt: 'Блюдо BIOSOMA Kitchen · режим ' + m.name, imgOp: on ? 1 : 0, imgScale: on ? 1 : 1.08, imgRot: on ? '0deg' : '-10deg', bgImg: 'img/biosoma/herbs-' + m.id + '.jpg', bgOp: on ? artOp : 0, bgScale: on ? 1 : 1.04 }; });
+    const modes = MODES.map(m => { const on = m.id === s.mode; return { ...m, bg: on ? '#22231F' : 'transparent', fg: on ? '#E8E3DA' : '#22231F', select: () => this.setState({ mode: m.id }), pad: s.phone ? '14px 12px' : '12px 20px', fs: s.phone ? '12px' : '13px', img: 'img/biosoma/food-' + m.id + '.jpg', alt: 'Блюдо BIOSOMA Kitchen · режим ' + m.name, imgOp: on ? 1 : 0, imgScale: on ? 1 : 1.08, imgRot: on ? '0deg' : '-10deg', bgImg: 'img/biosoma/herbs-' + m.id + '.jpg', bgOn: on ? 1 : 0, bgScale: on ? 1 : 1.04 }; });
     const indicators = ['Белок', 'Клетчатка', 'Сахар', 'Калории'].map((label, i) => ({ label, dots: [0, 1, 2, 3].map(j => ({ bg: j < mode.dots[i] ? '#33503F' : 'transparent' })) }));
 
     const morning = [{ time: '07:00', label: 'Пробуждение' }, { time: '07:15', label: 'Вода и минералы' }, { time: '07:30', label: 'Дыхательная практика' }, { time: '08:00', label: 'Йога' }, { time: '09:00', label: 'Biohacking breakfast' }, { time: '10:00', label: 'Mountain walking' }];
@@ -923,11 +1112,41 @@ class Component extends DCLogic {
 
     const audience = [{ k: 'Руководителям', v: 'предприниматели и специалисты с высокой интеллектуальной нагрузкой' }, { k: 'Для себя', v: 'wellness, yoga, beauty и longevity как часть образа жизни' }, { k: 'Командам', v: 'корпоративные ретриты для небольших групп' }];
 
+    const WD = ['вс', 'пн', 'вт', 'ср', 'чт', 'пт', 'сб'], MO = ['янв', 'фев', 'мар', 'апр', 'мая', 'июн', 'июл', 'авг', 'сен', 'окт', 'ноя', 'дек'];
+    const isoD = x => x.getFullYear() + '-' + String(x.getMonth() + 1).padStart(2, '0') + '-' + String(x.getDate()).padStart(2, '0');
+    const nextDates = rule => { const out = [], x = new Date(); x.setHours(12, 0, 0, 0); x.setDate(x.getDate() + 3); for (let i = 0; i < 120 && out.length < 3; i++) { if (rule(x)) out.push(new Date(x)); x.setDate(x.getDate() + 1); } return out; };
+    const rub = n => 'от ' + n.toLocaleString('ru-RU') + ' ₽';
+    const PRICE = [
+      { id: 'reset', badge: 'Главная программа', price: 89000, per: 'за гостя · 2 ночи', rule: x => x.getDay() === 5, inc: ['Проживание 2 ночи', 'Питание FOOD LAB · режим RESET', 'SPA и термальный круг каждый день', 'Banya Ritual с мастером', 'Йога, дыхание, mountain walk', 'Вечерний протокол сна'] },
+      { id: 'detox', badge: '', price: 168000, per: 'за гостя · 4 ночи', rule: x => x.getDay() === 1, inc: ['Проживание 4 ночи', 'Питание FOOD LAB · режим DETOX', 'Ежедневная термальная последовательность', 'Массаж и body treatments', 'Йога и функциональный тренинг', 'Reset Plan на 14 дней'] },
+      { id: 'longevity', badge: '', price: 256000, per: 'за гостя · 6 ночей', rule: x => x.getDay() === 0, inc: ['Проживание 6 ночей', 'Диагностика BIOSOMA LAB: состав тела, HRV, сон', 'Персональный план scan → plan → reset → recover', 'Питание FOOD LAB · режим LONGEVITY', 'SPA, холод и recovery-протоколы', 'Reset Plan на 14 дней'] },
+      { id: 'deep', badge: '', price: 390000, per: 'за гостя · 9–13 ночей', rule: x => x.getDate() === 1 || x.getDate() === 15, inc: ['Проживание 9–13 ночей', 'Индивидуальный куратор программы', 'BIOSOMA LAB в начале и в конце', 'Sleep Lab и recovery-протоколы', 'Трансфер из аэропорта Сочи', 'Сопровождение 14 дней после выезда'] }
+    ];
+    const prices = PRICE.map(pr => { const P = PROGRAMS.find(x => x.id === pr.id); return { badge: pr.badge, name: P.name, dur: P.dur, price: rub(pr.price), per: pr.per, inc: pr.inc, choose: () => { this.setState({ program: pr.id }); this._scrollTo('book'); }, dates: nextDates(pr.rule).map(x => ({ label: WD[x.getDay()] + ', ' + x.getDate() + ' ' + MO[x.getMonth()], pick: () => { this.setState({ program: pr.id, formDate: isoD(x) }); this._scrollTo('book'); } })) }; });
+    const team = [
+      { slot: 'team-1', photo: 'img/biosoma/team-doctor.jpg', role: 'Врач превентивной медицины', name: 'Анна Северина', text: 'BIOSOMA LAB: разбирает диагностику и собирает персональный план.' },
+      { slot: 'team-2', photo: 'img/biosoma/team-nutrition.jpg', role: 'Нутрициолог', name: 'Илья Ветров', text: 'Меню FOOD LAB и режимы питания RESET, DETOX, LONGEVITY.' },
+      { slot: 'team-3', photo: 'img/biosoma/team-movement.jpg', role: 'Тренер по движению', name: 'Мария Лесная', text: 'Йога, mobility, функциональный тренинг и горные маршруты.' },
+      { slot: 'team-4', photo: 'img/biosoma/team-banya.jpg', role: 'Банный мастер', name: 'Геннадий Камнев', text: 'Banya Ritual и термальная последовательность SPA.' }
+    ];
+    const reviews = ['RESET', 'DETOX', 'LONGEVITY'].map(pg => ({ text: '[Отзыв гостя: с каким запросом приехал и что изменилось после программы — 2–3 предложения]', name: '[Имя, город]', prog: pg }));
+    const FAQ = [
+      ['Нужна ли подготовка к программе?', 'Нет. За неделю до заезда мы пришлём короткую анкету о сне, питании и самочувствии, чтобы настроить программу под вас.'],
+      ['Есть ли противопоказания?', 'Тепловые и холодовые процедуры и нагрузки подходят не всем. При беременности, сердечно-сосудистых заболеваниях, гипертонии и в период обострений сообщите нам заранее — специалист подберёт альтернативу. Программы оздоровительные и не заменяют лечение.'],
+      ['Что взять с собой?', 'Удобную одежду для практик и прогулок, купальник и обувь для горных троп. Халаты, полотенца, коврики и банные принадлежности выдаём на месте.'],
+      ['Можно ли пользоваться телефоном?', 'Да. Digital Detox Box добровольный: телефон можно оставить в боксе при заезде и забрать в любой момент.'],
+      ['Можно ли приехать вдвоём?', 'Да. Цена указана за одного гостя, второй гость проходит программу на тех же условиях и живёт с вами в одном номере.'],
+      ['Как изменить или отменить бронирование?', 'Напишите нам в Telegram или на почту. Бесплатная отмена — за 14 дней до заезда, подробности — в правилах отмены и возврата.']
+    ];
+    const faq = FAQ.map(([q, a], i) => { const on = s.openFaq === i; return { q, a, open: on, rows: on ? '1fr' : '0fr', rot: on ? '45deg' : '0deg', iconBg: on ? '#22231F' : 'transparent', iconFg: on ? '#E8E3DA' : '#22231F', iconBorder: on ? '#22231F' : 'rgba(34,35,31,0.3)', toggle: () => this.setState(st => ({ openFaq: st.openFaq === i ? -1 : i })) }; });
+    const routes = [{ k: 'Самолёт', v: 'Аэропорт Сочи (AER) — 45–60 минут на машине до Красной Поляны.' }, { k: 'Поезд', v: '«Ласточка» от аэропорта или Адлера до станции «Роза Хутор» — около часа.' }, { k: 'Трансфер', v: 'Встретим в аэропорту или на вокзале — по запросу. В DEEP RESET трансфер включён.' }];
+    const serverMode = (this.props.formMode ?? 'Сервер (send.php)') === 'Сервер (send.php)';
+    const lf = this._lastForm || {};
     const d = new Date(); const today = d.getFullYear() + '-' + String(d.getMonth() + 1).padStart(2, '0') + '-' + String(d.getDate()).padStart(2, '0');
 
     return {
       wide: !s.narrow, narrow: s.narrow, phone: s.phone, notPhone: !s.phone,
-      pilCols: s.phone ? 'none' : 'repeat(auto-fit, minmax(min(100%, max(280px, 30%)), 1fr))', pilFlow: s.phone ? 'column' : 'row', pilAuto: s.phone ? '82%' : 'auto', pilOverflow: s.phone ? 'auto' : 'visible', pilSnap: s.phone ? 'x mandatory' : 'none',
+      pilCols: s.phone ? 'none' : 'repeat(auto-fit, minmax(min(100%, max(280px, 30%)), 1fr))', pilFlow: s.phone ? 'column' : 'row', pilAuto: s.phone ? '82%' : 'auto', pilOverflow: s.phone ? 'auto' : 'visible', pilSnap: s.phone ? 'x mandatory' : 'none', pilRows: s.phone ? 'auto' : 'clamp(190px, calc((100vh - 190px) / 3), 300px)', pilMinH: s.phone ? '300px' : '0px',
       kCardCols: s.phone ? 'minmax(0, 1fr)' : 'minmax(140px, 240px) 1fr', sleepCols: s.phone ? 'repeat(2, minmax(0, 1fr))' : 'repeat(auto-fit, minmax(180px, 1fr))', footJs: s.phone ? 'start' : 'end', footTa: s.phone ? 'left' : 'right', menuOpen: s.narrow && s.menu, menuLabel: s.menu ? 'Закрыть' : 'Меню',
       toggleMenu: () => this.setState(st => ({ menu: !st.menu })), closeMenu: () => this.setState({ menu: false }),
       navBgOpacity: s.scrolled || (s.narrow && s.menu) ? 1 : 0, navInk: s.scrolled || (s.narrow && s.menu) ? '#22231F' : '#F1EDE5',
@@ -935,19 +1154,23 @@ class Component extends DCLogic {
       wheel, prog, cur, t, needleDeg: s.needle, textOp: s.fade ? 0 : 1, textTy: s.fade ? '10px' : '0px',
       stagePrev: () => this._go((s.stage + 5) % 6, false), stageNext: () => this._go((s.stage + 1) % 6, false),
       wheelEnter: () => { this._hover = true; this._schedule(); }, wheelLeave: () => { this._hover = false; this._schedule(); },
-      wheelBox: VB.join(' '), cxp: px(300), cyp: py(300), capYp: py(364), centerSize: cq(92), capSize: 'max(10px, ' + cq(14) + ')', wheelScale: shown ? 1 : 0.95, pillars, artOn: artMode !== 'Выкл', artOpL: artMode === 'Заметнее' ? 0.26 : 0.15, artOpD: artMode === 'Заметнее' ? 0.2 : 0.11, programs, progDir: s.stack ? 'column' : 'row', progH: s.stack ? 'auto' : 'clamp(500px, 70vh, 660px)', programOptions, programId, selectDay: () => { this.setState({ program: 'day' }); this._scrollTo('book'); },
+      wheelBox: VB.join(' '), cxp: px(300), cyp: py(300), capYp: py(364), centerSize: cq(92), capSize: 'max(10px, ' + cq(14) + ')', wheelScale: shown ? 1 : 0.95, pillars, artOn: artMode !== 'Выкл', artOpL: artMode === 'Заметнее' ? 0.26 : 0.15, artOpD: artMode === 'Заметнее' ? 0.2 : 0.11, programs, progDir: s.stack ? 'column' : 'row', progH: s.stack ? 'auto' : 'clamp(340px, calc(100vh - 420px), 600px)', programOptions, programId, selectDay: () => { this.setState({ program: 'day' }); this._scrollTo('book'); },
       onProgramSelect: e => this.setState({ program: e.target.value }),
-      days, h72Days, fx, ticks, railPct: cur72.pct, h72Bg: tone, fxOp: FXP[0], fxTy: FXP[1], fxTr: FXP[2],
+      days, h72Col: days[aDay], h72Panel: mixT('#EDE8DF', tone, 0.045), h72Days, fx, ticks, railPct: cur72.pct, h72Bg: tone, fxOp: FXP[0], fxTy: FXP[1], fxTr: FXP[2],
       h72Enter: () => { this._h72Hover = true; }, h72Leave: () => { this._h72Hover = false; },
       spaces, active, modes, mode, indicators, morning, evening, sleepFeatures, rooms, audience, today,
       roomsPrev: () => { const el = document.querySelector('[data-rooms]'); if (el) el.scrollBy({ left: -el.clientWidth * 0.6, behavior: 'smooth' }); },
       roomsNext: () => { const el = document.querySelector('[data-rooms]'); if (el) el.scrollBy({ left: el.clientWidth * 0.6, behavior: 'smooth' }); },
+      barTy: (s.narrow && s.scrolled && !s.bookOn && !s.menu) ? '0%' : '140%', barOp: (s.narrow && s.scrolled && !s.bookOn && !s.menu) ? 1 : 0, barPe: (s.narrow && s.scrolled && !s.bookOn && !s.menu) ? 'auto' : 'none', barPrice: rub(Math.min(...PRICE.map(x => x.price))) + ' за гостя',
+      bars, introClip: 'none', introLabel: s.pilHover >= 0 ? 'Опора ' + pillars[s.pilHover].n + ' · ' + pillars[s.pilHover].en : 'BIOSOMA Method', pilLeave: () => { if (this.state.pilHover !== -1) this.setState({ pilHover: -1 }); },
+      prices, dayPrice: rub(18000), team, reviews, faq, routes, formDate: s.formDate, onDateChange: e => this.setState({ formDate: e.target.value }), sending: s.sending, formError: s.formError, submitLabel: s.sending ? 'Отправляем…' : 'Отправить запрос',
+      payOn: serverMode && s.sent && lf.guests !== 'team', payHref: 'pay.php?program=' + encodeURIComponent(lf.program || '') + '&guests=' + encodeURIComponent(lf.guests || '1') + '&phone=' + encodeURIComponent(lf.phone || ''),
       summary: current.label,
       notSent: !s.sent, sent: s.sent,
-      onSubmit: e => { e.preventDefault(); const fd = new FormData(e.target); this.setState({ sent: true, sentName: String(fd.get('name') || '').trim() }); },
+      onSubmit: e => { e.preventDefault(); const fd = new FormData(e.target); const name = String(fd.get('name') || '').trim(); this._lastForm = { program: String(fd.get('program') || ''), guests: String(fd.get('guests') || '1'), phone: String(fd.get('phone') || '') }; if (!serverMode) { this.setState({ sent: true, sentName: name, formError: false }); return; } this.setState({ sending: true, formError: false }); fetch('send.php', { method: 'POST', body: fd }).then(r => r.ok ? r.json() : Promise.reject(r.status)).then(j => { if (!j || !j.ok) throw new Error('fail'); this.setState({ sent: true, sentName: name, sending: false }); }).catch(() => this.setState({ sending: false, formError: true })); },
       sentTitle: (s.sentName ? s.sentName + ', ' : '') + 'мы подтвердим даты в течение дня',
       sentText: 'Программа: ' + current.label + '. Ссылку на оплату пришлём после подтверждения. Если вы оставили телефон команды, менеджер корпоративных ретритов свяжется первым.',
-      reset: () => this.setState({ sent: false, sentName: '' })
+      reset: () => this.setState({ sent: false, sentName: '', formError: false })
     };
   }
 }
