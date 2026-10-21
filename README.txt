@@ -8,7 +8,7 @@ BIOSOMA Mountain Retreat — сайт для загрузки по FTP
 1. config.php — e-mail для заявок, Telegram-бот (токен и chat_id), ключи ЮKassa, цены программ.
 2. Замените example.ru на ваш домен: index.html, docs.html, robots.txt, sitemap.xml, config.php.
 3. Цены и состав программ в блоке «Цены и даты» — примерные, проверьте и пришлите актуальные.
-4. Контакты-заглушки: +7 (000) 000-00-00, booking@[домен], ссылки Telegram/WhatsApp — замените.
+4. Контакты: +7 918 619-55-95, junasochi@mail.ru, WhatsApp — заполнены. Ссылка на MAX (max.ru/) — заглушка, замените.
 5. Документы (docs.html): заполните реквизиты в [квадратных скобках] и согласуйте с юристом.
 
 ФОТО
